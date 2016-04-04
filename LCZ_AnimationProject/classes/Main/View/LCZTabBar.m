@@ -7,6 +7,7 @@
 //
 
 #import "LCZTabBar.h"
+#import "LCZPublicView.h"
 @interface LCZTabBar()
 @property(nonatomic,strong)UIButton *publicButton;
 @end
@@ -27,6 +28,11 @@
         [_publicButton setImage:[UIImage imageNamed:@"tabBar_publish_click_icon"] forState:UIControlStateSelected];
         [[_publicButton rac_signalForControlEvents:UIControlEventTouchUpInside]subscribeNext:^(id x) {
             NSLog(@"qewq");
+            UIWindow *wind=[UIApplication sharedApplication].keyWindow;
+            LCZPublicView *lcz=[LCZPublicView new];
+            lcz.backgroundColor=[UIColor whiteColor];
+            lcz.frame=[UIScreen mainScreen].bounds;
+            [wind addSubview:lcz];
         }];
         [self addSubview:_publicButton];
         

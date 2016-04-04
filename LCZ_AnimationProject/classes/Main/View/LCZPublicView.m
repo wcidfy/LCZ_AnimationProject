@@ -17,7 +17,9 @@
 {
     self=[super initWithFrame:frame];
     if (self) {
-      
+        self.backgroundColor=[UIColor whiteColor];
+        _imageView=[[UIImageView alloc]initWithImage:[UIImage imageNamed:@"app_slogan"]];
+        [self addSubview:_imageView];
         
     }
 
@@ -27,6 +29,7 @@
 -(void)layoutSubviews
 {
     [super layoutSubviews];
+    _imageView.frame=CGRectMake(20, self.bounds.size.height*0.2,self.bounds.size.width-40, 20);
     NSArray *images = @[@"publish-video", @"publish-picture", @"publish-text", @"publish-audio", @"publish-review", @"publish-offline"];
     NSArray *titles = @[@"发视频", @"发图片", @"发段子", @"发声音", @"审帖", @"发链接"];
     for (NSInteger i=0; i<images.count; i++) {
