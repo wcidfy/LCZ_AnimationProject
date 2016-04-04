@@ -10,11 +10,20 @@
 		B5A3DD971CB2724E006FD7D6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A3DD961CB2724E006FD7D6 /* main.m */; };
 		B5A3DD9A1CB2724E006FD7D6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A3DD991CB2724E006FD7D6 /* AppDelegate.m */; };
 		B5A3DD9D1CB2724E006FD7D6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A3DD9C1CB2724E006FD7D6 /* ViewController.m */; };
-		B5A3DDA01CB2724E006FD7D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5A3DD9E1CB2724E006FD7D6 /* Main.storyboard */; };
 		B5A3DDA21CB2724E006FD7D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5A3DDA11CB2724E006FD7D6 /* Assets.xcassets */; };
-		B5A3DDA51CB2724E006FD7D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5A3DDA31CB2724E006FD7D6 /* LaunchScreen.storyboard */; };
 		B5A3DDB01CB2724E006FD7D6 /* LCZ_AnimationProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A3DDAF1CB2724E006FD7D6 /* LCZ_AnimationProjectTests.m */; };
 		B5A3DDBB1CB2724E006FD7D6 /* LCZ_AnimationProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A3DDBA1CB2724E006FD7D6 /* LCZ_AnimationProjectUITests.m */; };
+		B5A3DDCD1CB273B6006FD7D6 /* LCZTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A3DDCC1CB273B6006FD7D6 /* LCZTabBarController.m */; };
+		B5A3DDD01CB275C2006FD7D6 /* LCZNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A3DDCF1CB275C2006FD7D6 /* LCZNavigationController.m */; };
+		B5A3DDD71CB2780C006FD7D6 /* LCZMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A3DDD61CB2780C006FD7D6 /* LCZMeViewController.m */; };
+		B5A3DDDA1CB2784C006FD7D6 /* LCZAttentionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A3DDD91CB2784C006FD7D6 /* LCZAttentionViewController.m */; };
+		B5A3DDDD1CB27867006FD7D6 /* LCZNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A3DDDC1CB27867006FD7D6 /* LCZNewViewController.m */; };
+		B5A3DDE11CB2789A006FD7D6 /* LCZEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A3DDE01CB2789A006FD7D6 /* LCZEssenceViewController.m */; };
+		B5A3DDE61CB28539006FD7D6 /* LCZTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A3DDE51CB28539006FD7D6 /* LCZTabBar.m */; };
+		B5A3DDEA1CB29F43006FD7D6 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A3DDE91CB29F43006FD7D6 /* UIView+Extension.m */; };
+		B5A3DDED1CB2B74F006FD7D6 /* LCZPublicView.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A3DDEC1CB2B74F006FD7D6 /* LCZPublicView.m */; };
+		B5A3DDF01CB2B7EB006FD7D6 /* MyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A3DDEF1CB2B7EB006FD7D6 /* MyButton.m */; };
+		D060076790BC88F39E0533F2 /* Pods_LCZ_AnimationProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 654B270ED977751E5EF22C3A /* Pods_LCZ_AnimationProject.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,15 +44,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		654B270ED977751E5EF22C3A /* Pods_LCZ_AnimationProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LCZ_AnimationProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAC054889792B04E458BD764 /* Pods-LCZ_AnimationProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LCZ_AnimationProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LCZ_AnimationProject/Pods-LCZ_AnimationProject.debug.xcconfig"; sourceTree = "<group>"; };
 		B5A3DD921CB2724E006FD7D6 /* LCZ_AnimationProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LCZ_AnimationProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5A3DD961CB2724E006FD7D6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B5A3DD981CB2724E006FD7D6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		B5A3DD991CB2724E006FD7D6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B5A3DD9B1CB2724E006FD7D6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B5A3DD9C1CB2724E006FD7D6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		B5A3DD9F1CB2724E006FD7D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B5A3DD981CB2724E006FD7D6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../../AppDelegate.h; sourceTree = "<group>"; };
+		B5A3DD991CB2724E006FD7D6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../../AppDelegate.m; sourceTree = "<group>"; };
+		B5A3DD9B1CB2724E006FD7D6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ../../ViewController.h; sourceTree = "<group>"; };
+		B5A3DD9C1CB2724E006FD7D6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ../../ViewController.m; sourceTree = "<group>"; };
 		B5A3DDA11CB2724E006FD7D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B5A3DDA41CB2724E006FD7D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5A3DDA61CB2724E006FD7D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5A3DDAB1CB2724E006FD7D6 /* LCZ_AnimationProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LCZ_AnimationProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5A3DDAF1CB2724E006FD7D6 /* LCZ_AnimationProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCZ_AnimationProjectTests.m; sourceTree = "<group>"; };
@@ -51,6 +60,28 @@
 		B5A3DDB61CB2724E006FD7D6 /* LCZ_AnimationProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LCZ_AnimationProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5A3DDBA1CB2724E006FD7D6 /* LCZ_AnimationProjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCZ_AnimationProjectUITests.m; sourceTree = "<group>"; };
 		B5A3DDBC1CB2724E006FD7D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5A3DDCB1CB273B6006FD7D6 /* LCZTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCZTabBarController.h; sourceTree = "<group>"; };
+		B5A3DDCC1CB273B6006FD7D6 /* LCZTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCZTabBarController.m; sourceTree = "<group>"; };
+		B5A3DDCE1CB275C2006FD7D6 /* LCZNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCZNavigationController.h; sourceTree = "<group>"; };
+		B5A3DDCF1CB275C2006FD7D6 /* LCZNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCZNavigationController.m; sourceTree = "<group>"; };
+		B5A3DDD51CB2780C006FD7D6 /* LCZMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCZMeViewController.h; sourceTree = "<group>"; };
+		B5A3DDD61CB2780C006FD7D6 /* LCZMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCZMeViewController.m; sourceTree = "<group>"; };
+		B5A3DDD81CB2784C006FD7D6 /* LCZAttentionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCZAttentionViewController.h; sourceTree = "<group>"; };
+		B5A3DDD91CB2784C006FD7D6 /* LCZAttentionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCZAttentionViewController.m; sourceTree = "<group>"; };
+		B5A3DDDB1CB27866006FD7D6 /* LCZNewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCZNewViewController.h; sourceTree = "<group>"; };
+		B5A3DDDC1CB27867006FD7D6 /* LCZNewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCZNewViewController.m; sourceTree = "<group>"; };
+		B5A3DDDF1CB2789A006FD7D6 /* LCZEssenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCZEssenceViewController.h; sourceTree = "<group>"; };
+		B5A3DDE01CB2789A006FD7D6 /* LCZEssenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCZEssenceViewController.m; sourceTree = "<group>"; };
+		B5A3DDE21CB278CF006FD7D6 /* LCZ.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCZ.pch; sourceTree = "<group>"; };
+		B5A3DDE41CB28539006FD7D6 /* LCZTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCZTabBar.h; sourceTree = "<group>"; };
+		B5A3DDE51CB28539006FD7D6 /* LCZTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCZTabBar.m; sourceTree = "<group>"; };
+		B5A3DDE81CB29F43006FD7D6 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		B5A3DDE91CB29F43006FD7D6 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		B5A3DDEB1CB2B74F006FD7D6 /* LCZPublicView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCZPublicView.h; sourceTree = "<group>"; };
+		B5A3DDEC1CB2B74F006FD7D6 /* LCZPublicView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCZPublicView.m; sourceTree = "<group>"; };
+		B5A3DDEE1CB2B7EB006FD7D6 /* MyButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyButton.h; sourceTree = "<group>"; };
+		B5A3DDEF1CB2B7EB006FD7D6 /* MyButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyButton.m; sourceTree = "<group>"; };
+		BC9CEA4FD538CC78D9EB1DB9 /* Pods-LCZ_AnimationProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LCZ_AnimationProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-LCZ_AnimationProject/Pods-LCZ_AnimationProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D060076790BC88F39E0533F2 /* Pods_LCZ_AnimationProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +117,8 @@
 				B5A3DDAE1CB2724E006FD7D6 /* LCZ_AnimationProjectTests */,
 				B5A3DDB91CB2724E006FD7D6 /* LCZ_AnimationProjectUITests */,
 				B5A3DD931CB2724E006FD7D6 /* Products */,
+				C84E866E79BF5E8F03B699D1 /* Pods */,
+				E583A0EAF1EB14C4729E168F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,13 +135,8 @@
 		B5A3DD941CB2724E006FD7D6 /* LCZ_AnimationProject */ = {
 			isa = PBXGroup;
 			children = (
-				B5A3DD981CB2724E006FD7D6 /* AppDelegate.h */,
-				B5A3DD991CB2724E006FD7D6 /* AppDelegate.m */,
-				B5A3DD9B1CB2724E006FD7D6 /* ViewController.h */,
-				B5A3DD9C1CB2724E006FD7D6 /* ViewController.m */,
-				B5A3DD9E1CB2724E006FD7D6 /* Main.storyboard */,
+				B5A3DDC81CB272BE006FD7D6 /* classes */,
 				B5A3DDA11CB2724E006FD7D6 /* Assets.xcassets */,
-				B5A3DDA31CB2724E006FD7D6 /* LaunchScreen.storyboard */,
 				B5A3DDA61CB2724E006FD7D6 /* Info.plist */,
 				B5A3DD951CB2724E006FD7D6 /* Supporting Files */,
 			);
@@ -118,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				B5A3DD961CB2724E006FD7D6 /* main.m */,
+				B5A3DDE21CB278CF006FD7D6 /* LCZ.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -140,6 +170,118 @@
 			path = LCZ_AnimationProjectUITests;
 			sourceTree = "<group>";
 		};
+		B5A3DDC81CB272BE006FD7D6 /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				B5A3DDE71CB29F1C006FD7D6 /* Category */,
+				B5A3DDD41CB277CE006FD7D6 /* 我 */,
+				B5A3DDD31CB277BA006FD7D6 /* 关注 */,
+				B5A3DDD21CB2776F006FD7D6 /* 最新 */,
+				B5A3DDD11CB27748006FD7D6 /* 精华 */,
+				B5A3DDCA1CB272FA006FD7D6 /* Other */,
+				B5A3DDC91CB272E0006FD7D6 /* Main */,
+			);
+			path = classes;
+			sourceTree = "<group>";
+		};
+		B5A3DDC91CB272E0006FD7D6 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				B5A3DDE31CB284FF006FD7D6 /* View */,
+				B5A3DDCB1CB273B6006FD7D6 /* LCZTabBarController.h */,
+				B5A3DDCC1CB273B6006FD7D6 /* LCZTabBarController.m */,
+				B5A3DDCE1CB275C2006FD7D6 /* LCZNavigationController.h */,
+				B5A3DDCF1CB275C2006FD7D6 /* LCZNavigationController.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		B5A3DDCA1CB272FA006FD7D6 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				B5A3DD981CB2724E006FD7D6 /* AppDelegate.h */,
+				B5A3DD991CB2724E006FD7D6 /* AppDelegate.m */,
+				B5A3DD9B1CB2724E006FD7D6 /* ViewController.h */,
+				B5A3DD9C1CB2724E006FD7D6 /* ViewController.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		B5A3DDD11CB27748006FD7D6 /* 精华 */ = {
+			isa = PBXGroup;
+			children = (
+				B5A3DDDF1CB2789A006FD7D6 /* LCZEssenceViewController.h */,
+				B5A3DDE01CB2789A006FD7D6 /* LCZEssenceViewController.m */,
+			);
+			path = "精华";
+			sourceTree = "<group>";
+		};
+		B5A3DDD21CB2776F006FD7D6 /* 最新 */ = {
+			isa = PBXGroup;
+			children = (
+				B5A3DDDB1CB27866006FD7D6 /* LCZNewViewController.h */,
+				B5A3DDDC1CB27867006FD7D6 /* LCZNewViewController.m */,
+			);
+			path = "最新";
+			sourceTree = "<group>";
+		};
+		B5A3DDD31CB277BA006FD7D6 /* 关注 */ = {
+			isa = PBXGroup;
+			children = (
+				B5A3DDD81CB2784C006FD7D6 /* LCZAttentionViewController.h */,
+				B5A3DDD91CB2784C006FD7D6 /* LCZAttentionViewController.m */,
+			);
+			path = "关注";
+			sourceTree = "<group>";
+		};
+		B5A3DDD41CB277CE006FD7D6 /* 我 */ = {
+			isa = PBXGroup;
+			children = (
+				B5A3DDD51CB2780C006FD7D6 /* LCZMeViewController.h */,
+				B5A3DDD61CB2780C006FD7D6 /* LCZMeViewController.m */,
+			);
+			path = "我";
+			sourceTree = "<group>";
+		};
+		B5A3DDE31CB284FF006FD7D6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B5A3DDE41CB28539006FD7D6 /* LCZTabBar.h */,
+				B5A3DDE51CB28539006FD7D6 /* LCZTabBar.m */,
+				B5A3DDEB1CB2B74F006FD7D6 /* LCZPublicView.h */,
+				B5A3DDEC1CB2B74F006FD7D6 /* LCZPublicView.m */,
+				B5A3DDEE1CB2B7EB006FD7D6 /* MyButton.h */,
+				B5A3DDEF1CB2B7EB006FD7D6 /* MyButton.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B5A3DDE71CB29F1C006FD7D6 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				B5A3DDE81CB29F43006FD7D6 /* UIView+Extension.h */,
+				B5A3DDE91CB29F43006FD7D6 /* UIView+Extension.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		C84E866E79BF5E8F03B699D1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AAC054889792B04E458BD764 /* Pods-LCZ_AnimationProject.debug.xcconfig */,
+				BC9CEA4FD538CC78D9EB1DB9 /* Pods-LCZ_AnimationProject.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E583A0EAF1EB14C4729E168F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				654B270ED977751E5EF22C3A /* Pods_LCZ_AnimationProject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +289,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B5A3DDBF1CB2724E006FD7D6 /* Build configuration list for PBXNativeTarget "LCZ_AnimationProject" */;
 			buildPhases = (
+				EE039A0C7E6420BBA7A72949 /* Check Pods Manifest.lock */,
 				B5A3DD8E1CB2724E006FD7D6 /* Sources */,
 				B5A3DD8F1CB2724E006FD7D6 /* Frameworks */,
 				B5A3DD901CB2724E006FD7D6 /* Resources */,
+				7FAE46750B9F37F46577FABF /* Embed Pods Frameworks */,
+				1CB08218210B56A85ED4F1EE /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -246,9 +391,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5A3DDA51CB2724E006FD7D6 /* LaunchScreen.storyboard in Resources */,
 				B5A3DDA21CB2724E006FD7D6 /* Assets.xcassets in Resources */,
-				B5A3DDA01CB2724E006FD7D6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,12 +411,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1CB08218210B56A85ED4F1EE /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LCZ_AnimationProject/Pods-LCZ_AnimationProject-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7FAE46750B9F37F46577FABF /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LCZ_AnimationProject/Pods-LCZ_AnimationProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE039A0C7E6420BBA7A72949 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B5A3DD8E1CB2724E006FD7D6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5A3DDE11CB2789A006FD7D6 /* LCZEssenceViewController.m in Sources */,
+				B5A3DDD71CB2780C006FD7D6 /* LCZMeViewController.m in Sources */,
+				B5A3DDEA1CB29F43006FD7D6 /* UIView+Extension.m in Sources */,
+				B5A3DDF01CB2B7EB006FD7D6 /* MyButton.m in Sources */,
+				B5A3DDDA1CB2784C006FD7D6 /* LCZAttentionViewController.m in Sources */,
+				B5A3DDE61CB28539006FD7D6 /* LCZTabBar.m in Sources */,
 				B5A3DD9D1CB2724E006FD7D6 /* ViewController.m in Sources */,
+				B5A3DDDD1CB27867006FD7D6 /* LCZNewViewController.m in Sources */,
+				B5A3DDD01CB275C2006FD7D6 /* LCZNavigationController.m in Sources */,
+				B5A3DDCD1CB273B6006FD7D6 /* LCZTabBarController.m in Sources */,
+				B5A3DDED1CB2B74F006FD7D6 /* LCZPublicView.m in Sources */,
 				B5A3DD9A1CB2724E006FD7D6 /* AppDelegate.m in Sources */,
 				B5A3DD971CB2724E006FD7D6 /* main.m in Sources */,
 			);
@@ -309,25 +510,6 @@
 			targetProxy = B5A3DDB71CB2724E006FD7D6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		B5A3DD9E1CB2724E006FD7D6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B5A3DD9F1CB2724E006FD7D6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		B5A3DDA31CB2724E006FD7D6 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B5A3DDA41CB2724E006FD7D6 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		B5A3DDBD1CB2724E006FD7D6 /* Debug */ = {
@@ -412,8 +594,11 @@
 		};
 		B5A3DDC01CB2724E006FD7D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAC054889792B04E458BD764 /* Pods-LCZ_AnimationProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LCZ_AnimationProject/LCZ.pch";
 				INFOPLIST_FILE = LCZ_AnimationProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "lxx.adqer.com.LCZ-AnimationProject";
@@ -423,8 +608,11 @@
 		};
 		B5A3DDC11CB2724E006FD7D6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC9CEA4FD538CC78D9EB1DB9 /* Pods-LCZ_AnimationProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LCZ_AnimationProject/LCZ.pch";
 				INFOPLIST_FILE = LCZ_AnimationProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "lxx.adqer.com.LCZ-AnimationProject";
@@ -499,6 +687,7 @@
 				B5A3DDC11CB2724E006FD7D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B5A3DDC21CB2724E006FD7D6 /* Build configuration list for PBXNativeTarget "LCZ_AnimationProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +696,7 @@
 				B5A3DDC41CB2724E006FD7D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B5A3DDC51CB2724E006FD7D6 /* Build configuration list for PBXNativeTarget "LCZ_AnimationProjectUITests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +705,7 @@
 				B5A3DDC71CB2724E006FD7D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
