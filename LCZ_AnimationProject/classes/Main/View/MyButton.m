@@ -15,7 +15,7 @@
 
     self=[super initWithFrame:frame];
     if (self) {
-        [self setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [self setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
         self.imageView.contentMode = UIViewContentModeScaleAspectFill;
     
     
