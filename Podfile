@@ -10,5 +10,7 @@ pod 'MJExtension', '~> 3.0.7'
 pod 'UMengSocial', '~> 4.3'
 pod 'ReactiveCocoa'
 pod 'MJRefresh', '~> 3.1.0'
+pod 'AMap2DMap'
+pod 'AMapSearch'
 end
 

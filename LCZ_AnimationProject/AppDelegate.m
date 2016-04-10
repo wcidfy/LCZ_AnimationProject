@@ -22,6 +22,10 @@
     LCZTabBarController *tab=[LCZTabBarController new];
     self.window.rootViewController=tab;
     [self.window makeKeyAndVisible];
+    
+   
+    
+
     return YES;
 }
 

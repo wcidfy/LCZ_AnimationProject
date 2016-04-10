@@ -8,6 +8,7 @@
 
 #import "LCZPublicView.h"
 #import "MyButton.h"
+#import <AVFoundation/AVFoundation.h>
 @interface LCZPublicView()
 @property(nonatomic,strong)UIImageView *imageView;
 @property(nonatomic,strong)UIButton  *exitButton;
@@ -25,6 +26,7 @@
         _whileView=[[UIView alloc]init];
         [self addSubview:_whileView];
         _imageView=[[UIImageView alloc]initWithImage:[UIImage imageNamed:@"app_slogan"]];
+        _imageView.contentMode=UIViewContentModeScaleAspectFit;
         [_whileView addSubview:_imageView];
        
         
@@ -66,13 +68,42 @@
         CGFloat buttonX=startX+(middleW+buttonW)*Col;
         CGFloat buttonY=LCZViewHeight*0.4+Row*(100+20);
         Butt.frame=CGRectMake(buttonX, buttonY, buttonW, buttonH);
+        Butt.tag=100+i;
+        [Butt addTarget:self action:@selector(ButtClick:) forControlEvents:UIControlEventTouchUpInside];
         [_whileView addSubview:Butt];
 
 }
     
 }
 
+-(void)ButtClick:(UIButton *)sender
+{
+    if (sender.tag==100) {
+//发视屏
+    
+    }else if(sender.tag==101)
+    {
+//    发图片
+    
+    }else if(sender.tag==102)
+    {
+//      发段子
+        
+    }else if(sender.tag==103)
+    {
+//        发声音
+    }else if(sender.tag==104)
+    {
+//        申贴
+        
+    }else if(sender.tag==105)
+    {
+//        发链接
+        
+    }
 
+
+}
 -(void)exitButClick
 {
     NSLog(@"121");
@@ -107,16 +138,18 @@
     for (NSInteger i = 0; i<self.whileView.subviews.count; i++) {
         UIView *view = self.whileView.subviews[i];
         if ([view isKindOfClass:[MyButton class]]) {
-            [UIView animateWithDuration:0.3 delay:0.05 options:UIViewAnimationOptionTransitionCurlDown animations:^{
+            [UIView animateWithDuration:0.6 delay:0.1 options:UIViewAnimationOptionTransitionCurlDown animations:^{
                 view.y = 800;
+              
                  [self layoutIfNeeded];
-   } completion:^(BOOL finished) {
+            } completion:^(BOOL finished) {
             }];
         }
     }
 
-    [UIView animateWithDuration:0.7 animations:^{
+    [UIView animateWithDuration:0.6 animations:^{
         self.imageView.y=800;
+        self.exitButton.y=800;
         [self layoutIfNeeded];
     } completion:^(BOOL finished) {
         [self removeFromSuperview];

@@ -38,9 +38,7 @@
     LCZMeViewController *me=[LCZMeViewController new];
     [self addController:me image:@"tabBar_me_icon" selectedImage:@"tabBar_me_click_icon" title:@"我"];
     
-
-
-}
+    }
 #pragma  mark 创建子控制器
 -(void)addController:(UIViewController *)vc image:(NSString *)image selectedImage:(NSString *)selectedImage title:(NSString *)title
 {

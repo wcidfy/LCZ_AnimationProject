@@ -17,7 +17,7 @@
     if (self) {
         [self setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
         self.imageView.contentMode = UIViewContentModeScaleAspectFill;
-    
+        [self.titleLabel setFont:[UIFont systemFontOfSize:14]];
     
     }
     return self;

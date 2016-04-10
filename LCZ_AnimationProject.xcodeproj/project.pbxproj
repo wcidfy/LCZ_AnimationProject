@@ -23,6 +23,9 @@
 		B5A3DDEA1CB29F43006FD7D6 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A3DDE91CB29F43006FD7D6 /* UIView+Extension.m */; };
 		B5A3DDED1CB2B74F006FD7D6 /* LCZPublicView.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A3DDEC1CB2B74F006FD7D6 /* LCZPublicView.m */; };
 		B5A3DDF01CB2B7EB006FD7D6 /* MyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A3DDEF1CB2B7EB006FD7D6 /* MyButton.m */; };
+		B5F4B5801CB38B0A00BE7183 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5F4B57F1CB38B0A00BE7183 /* AVFoundation.framework */; };
+		B5F4B5871CBA0EFB00BE7183 /* AddtreaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5F4B5861CBA0EFB00BE7183 /* AddtreaViewController.m */; };
+		B5F4B58A1CBA0F1900BE7183 /* AddTreaView.m in Sources */ = {isa = PBXBuildFile; fileRef = B5F4B5891CBA0F1900BE7183 /* AddTreaView.m */; };
 		D060076790BC88F39E0533F2 /* Pods_LCZ_AnimationProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 654B270ED977751E5EF22C3A /* Pods_LCZ_AnimationProject.framework */; };
 /* End PBXBuildFile section */
 
@@ -81,6 +84,11 @@
 		B5A3DDEC1CB2B74F006FD7D6 /* LCZPublicView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCZPublicView.m; sourceTree = "<group>"; };
 		B5A3DDEE1CB2B7EB006FD7D6 /* MyButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyButton.h; sourceTree = "<group>"; };
 		B5A3DDEF1CB2B7EB006FD7D6 /* MyButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyButton.m; sourceTree = "<group>"; };
+		B5F4B57F1CB38B0A00BE7183 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		B5F4B5851CBA0EFB00BE7183 /* AddtreaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddtreaViewController.h; sourceTree = "<group>"; };
+		B5F4B5861CBA0EFB00BE7183 /* AddtreaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddtreaViewController.m; sourceTree = "<group>"; };
+		B5F4B5881CBA0F1900BE7183 /* AddTreaView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddTreaView.h; sourceTree = "<group>"; };
+		B5F4B5891CBA0F1900BE7183 /* AddTreaView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddTreaView.m; sourceTree = "<group>"; };
 		BC9CEA4FD538CC78D9EB1DB9 /* Pods-LCZ_AnimationProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LCZ_AnimationProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-LCZ_AnimationProject/Pods-LCZ_AnimationProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5F4B5801CB38B0A00BE7183 /* AVFoundation.framework in Frameworks */,
 				D060076790BC88F39E0533F2 /* Pods_LCZ_AnimationProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -239,6 +248,10 @@
 			children = (
 				B5A3DDD51CB2780C006FD7D6 /* LCZMeViewController.h */,
 				B5A3DDD61CB2780C006FD7D6 /* LCZMeViewController.m */,
+				B5F4B5851CBA0EFB00BE7183 /* AddtreaViewController.h */,
+				B5F4B5861CBA0EFB00BE7183 /* AddtreaViewController.m */,
+				B5F4B5881CBA0F1900BE7183 /* AddTreaView.h */,
+				B5F4B5891CBA0F1900BE7183 /* AddTreaView.m */,
 			);
 			path = "我";
 			sourceTree = "<group>";
@@ -277,6 +290,7 @@
 		E583A0EAF1EB14C4729E168F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B5F4B57F1CB38B0A00BE7183 /* AVFoundation.framework */,
 				654B270ED977751E5EF22C3A /* Pods_LCZ_AnimationProject.framework */,
 			);
 			name = Frameworks;
@@ -468,10 +482,12 @@
 				B5A3DDD71CB2780C006FD7D6 /* LCZMeViewController.m in Sources */,
 				B5A3DDEA1CB29F43006FD7D6 /* UIView+Extension.m in Sources */,
 				B5A3DDF01CB2B7EB006FD7D6 /* MyButton.m in Sources */,
+				B5F4B5871CBA0EFB00BE7183 /* AddtreaViewController.m in Sources */,
 				B5A3DDDA1CB2784C006FD7D6 /* LCZAttentionViewController.m in Sources */,
 				B5A3DDE61CB28539006FD7D6 /* LCZTabBar.m in Sources */,
 				B5A3DD9D1CB2724E006FD7D6 /* ViewController.m in Sources */,
 				B5A3DDDD1CB27867006FD7D6 /* LCZNewViewController.m in Sources */,
+				B5F4B58A1CBA0F1900BE7183 /* AddTreaView.m in Sources */,
 				B5A3DDD01CB275C2006FD7D6 /* LCZNavigationController.m in Sources */,
 				B5A3DDCD1CB273B6006FD7D6 /* LCZTabBarController.m in Sources */,
 				B5A3DDED1CB2B74F006FD7D6 /* LCZPublicView.m in Sources */,
@@ -598,8 +614,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/LCZ_AnimationProject/LCZ.pch";
 				INFOPLIST_FILE = LCZ_AnimationProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "lxx.adqer.com.LCZ-AnimationProject";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -612,8 +633,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/LCZ_AnimationProject/LCZ.pch";
 				INFOPLIST_FILE = LCZ_AnimationProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "lxx.adqer.com.LCZ-AnimationProject";
 				PRODUCT_NAME = "$(TARGET_NAME)";
