@@ -16,7 +16,9 @@
 @interface LCZEssenceViewController ()<UIScrollViewDelegate>
 @property(nonatomic,strong)UIScrollView *scrollView;
 @property (nonatomic,strong) UIView *titleView;
-@property (nonatomic,  weak) UIButton *seletedBtn;
+@property (nonatomic,  strong) UIButton *seletedBtn;
+@property (nonatomic,  strong) UIView *redView;
+
 
 @end
 
@@ -31,6 +33,7 @@
     [self.view addSubview:self.scrollView];
     [self.view addSubview:self.titleView];
     [self setupTitleBtn];
+    [_titleView addSubview:_redView];
     
 
     
@@ -79,8 +82,8 @@
             self.seletedBtn = btn;
             [btn.titleLabel sizeToFit];
             
-//            self.btnIndicator.width = btn.titleLabel.width;
-//            self.btnIndicator.centerX = btn.centerX;
+            self.redView.width = btn.titleLabel.width;
+            self.redView.centerX = btn.centerX;
         }
     }
 }
@@ -93,8 +96,8 @@
     //指示器动画
     [UIView animateWithDuration:0.2 animations:^{
         //必须在这里才设置指示器的宽度，要不宽度会计算错误
-//        self.btnIndicator.width = btn.titleLabel.width;
-//        self.btnIndicator.centerX = btn.centerX;
+        self.redView.width = btn.titleLabel.width;
+        self.redView.centerX = btn.centerX;
     }];
     //控制器view的滚动
     CGPoint offset = self.scrollView.contentOffset;
@@ -103,7 +106,7 @@
     
     
 }
-
+#pragma mark 滚动视图
 -(UIScrollView *)scrollView
 {
     if (_scrollView==nil) {
@@ -116,6 +119,7 @@
     }
     return _scrollView ;
 }
+#pragma mark 上面的view
 - (UIView *)titleView{
     if (_titleView == nil) {
         _titleView = [[UIView alloc]init];
@@ -124,13 +128,18 @@
     }
     return _titleView;
 }
-
+-(UIView *)redView
+{
+    if (_redView==nil) {
+        _redView=[[UIView alloc]init];
+        _redView.backgroundColor=[UIColor redColor];
+        _redView.height=2;
+        _redView.y=self.titleView.height-_redView.height;
+    }
+    return _redView;
+}
 #pragma mark  滚动视图代理
-/**
- *  <#Description#>
- *
- *  @param scrollView 结束滚动动画
- */
+
 -(void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView {
 
 {
@@ -144,5 +153,17 @@
     
 
 }
+}
+#pragma mark 减速滚动
+-(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
+{
+    [self scrollViewDidEndScrollingAnimation:scrollView];
+
+
+    CGPoint pt=scrollView.contentOffset;
+    NSInteger index=pt.x/scrollView.width;
+    [self btnClick:self.titleView.subviews[index]];
+
+
 }
 @end
