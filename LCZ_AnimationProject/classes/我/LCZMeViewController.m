@@ -60,7 +60,6 @@
 {
     AddtreaViewController *addTrea=[[AddtreaViewController alloc]init];
     [self.navigationController pushViewController:addTrea animated:YES];
-     [self.navigationController setNavigationBarHidden:NO animated:YES];
 
 }
 - (void)didReceiveMemoryWarning {
@@ -74,6 +73,7 @@ updatingLocation:(BOOL)updatingLocation
     {
         //取出当前位置的坐标
         NSLog(@"latitude : %f,longitude: %f",userLocation.coordinate.latitude,userLocation.coordinate.longitude);
+        
     }
 }
 @end

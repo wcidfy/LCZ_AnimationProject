@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B57BEC371CBC86420043358F /* MyAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = B57BEC361CBC86420043358F /* MyAlertView.m */; };
+		B57BEC391CBC8A9C0043358F /* contimage.png in Resources */ = {isa = PBXBuildFile; fileRef = B57BEC381CBC8A9C0043358F /* contimage.png */; };
+		B57BEC3B1CBC8AA30043358F /* backimage.png in Resources */ = {isa = PBXBuildFile; fileRef = B57BEC3A1CBC8AA30043358F /* backimage.png */; };
+		B57BEC431CBCF1F40043358F /* RecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B57BEC421CBCF1F40043358F /* RecommendViewController.m */; };
+		B57BEC461CBCF2620043358F /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B57BEC451CBCF2620043358F /* VideoViewController.m */; };
+		B57BEC491CBCF3110043358F /* PicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B57BEC481CBCF3110043358F /* PicViewController.m */; };
+		B57BEC4C1CBCF3340043358F /* VoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B57BEC4B1CBCF3340043358F /* VoiceViewController.m */; };
+		B57BEC4F1CBCF3930043358F /* TalkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B57BEC4E1CBCF3930043358F /* TalkViewController.m */; };
 		B5A3DD971CB2724E006FD7D6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A3DD961CB2724E006FD7D6 /* main.m */; };
 		B5A3DD9A1CB2724E006FD7D6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A3DD991CB2724E006FD7D6 /* AppDelegate.m */; };
 		B5A3DD9D1CB2724E006FD7D6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A3DD9C1CB2724E006FD7D6 /* ViewController.m */; };
@@ -49,6 +57,20 @@
 /* Begin PBXFileReference section */
 		654B270ED977751E5EF22C3A /* Pods_LCZ_AnimationProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LCZ_AnimationProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAC054889792B04E458BD764 /* Pods-LCZ_AnimationProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LCZ_AnimationProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LCZ_AnimationProject/Pods-LCZ_AnimationProject.debug.xcconfig"; sourceTree = "<group>"; };
+		B57BEC351CBC86420043358F /* MyAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAlertView.h; sourceTree = "<group>"; };
+		B57BEC361CBC86420043358F /* MyAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAlertView.m; sourceTree = "<group>"; };
+		B57BEC381CBC8A9C0043358F /* contimage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = contimage.png; sourceTree = "<group>"; };
+		B57BEC3A1CBC8AA30043358F /* backimage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backimage.png; sourceTree = "<group>"; };
+		B57BEC411CBCF1F40043358F /* RecommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommendViewController.h; sourceTree = "<group>"; };
+		B57BEC421CBCF1F40043358F /* RecommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommendViewController.m; sourceTree = "<group>"; };
+		B57BEC441CBCF2620043358F /* VideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
+		B57BEC451CBCF2620043358F /* VideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
+		B57BEC471CBCF3110043358F /* PicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PicViewController.h; sourceTree = "<group>"; };
+		B57BEC481CBCF3110043358F /* PicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PicViewController.m; sourceTree = "<group>"; };
+		B57BEC4A1CBCF3340043358F /* VoiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoiceViewController.h; sourceTree = "<group>"; };
+		B57BEC4B1CBCF3340043358F /* VoiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VoiceViewController.m; sourceTree = "<group>"; };
+		B57BEC4D1CBCF3930043358F /* TalkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TalkViewController.h; sourceTree = "<group>"; };
+		B57BEC4E1CBCF3930043358F /* TalkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TalkViewController.m; sourceTree = "<group>"; };
 		B5A3DD921CB2724E006FD7D6 /* LCZ_AnimationProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LCZ_AnimationProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5A3DD961CB2724E006FD7D6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B5A3DD981CB2724E006FD7D6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../../AppDelegate.h; sourceTree = "<group>"; };
@@ -119,6 +141,62 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B57BEC341CBC85E80043358F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B57BEC3A1CBC8AA30043358F /* backimage.png */,
+				B57BEC381CBC8A9C0043358F /* contimage.png */,
+				B57BEC351CBC86420043358F /* MyAlertView.h */,
+				B57BEC361CBC86420043358F /* MyAlertView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B57BEC3C1CBCF0B20043358F /* 推荐 */ = {
+			isa = PBXGroup;
+			children = (
+				B57BEC411CBCF1F40043358F /* RecommendViewController.h */,
+				B57BEC421CBCF1F40043358F /* RecommendViewController.m */,
+			);
+			path = "推荐";
+			sourceTree = "<group>";
+		};
+		B57BEC3D1CBCF0EB0043358F /* 视频 */ = {
+			isa = PBXGroup;
+			children = (
+				B57BEC441CBCF2620043358F /* VideoViewController.h */,
+				B57BEC451CBCF2620043358F /* VideoViewController.m */,
+			);
+			path = "视频";
+			sourceTree = "<group>";
+		};
+		B57BEC3E1CBCF0FB0043358F /* 图片 */ = {
+			isa = PBXGroup;
+			children = (
+				B57BEC471CBCF3110043358F /* PicViewController.h */,
+				B57BEC481CBCF3110043358F /* PicViewController.m */,
+			);
+			path = "图片";
+			sourceTree = "<group>";
+		};
+		B57BEC3F1CBCF1040043358F /* 声音 */ = {
+			isa = PBXGroup;
+			children = (
+				B57BEC4A1CBCF3340043358F /* VoiceViewController.h */,
+				B57BEC4B1CBCF3340043358F /* VoiceViewController.m */,
+			);
+			path = "声音";
+			sourceTree = "<group>";
+		};
+		B57BEC401CBCF1120043358F /* 段子 */ = {
+			isa = PBXGroup;
+			children = (
+				B57BEC4D1CBCF3930043358F /* TalkViewController.h */,
+				B57BEC4E1CBCF3930043358F /* TalkViewController.m */,
+			);
+			path = "段子";
+			sourceTree = "<group>";
+		};
 		B5A3DD891CB2724E006FD7D6 = {
 			isa = PBXGroup;
 			children = (
@@ -219,6 +297,11 @@
 		B5A3DDD11CB27748006FD7D6 /* 精华 */ = {
 			isa = PBXGroup;
 			children = (
+				B57BEC401CBCF1120043358F /* 段子 */,
+				B57BEC3F1CBCF1040043358F /* 声音 */,
+				B57BEC3E1CBCF0FB0043358F /* 图片 */,
+				B57BEC3D1CBCF0EB0043358F /* 视频 */,
+				B57BEC3C1CBCF0B20043358F /* 推荐 */,
 				B5A3DDDF1CB2789A006FD7D6 /* LCZEssenceViewController.h */,
 				B5A3DDE01CB2789A006FD7D6 /* LCZEssenceViewController.m */,
 			);
@@ -237,6 +320,7 @@
 		B5A3DDD31CB277BA006FD7D6 /* 关注 */ = {
 			isa = PBXGroup;
 			children = (
+				B57BEC341CBC85E80043358F /* View */,
 				B5A3DDD81CB2784C006FD7D6 /* LCZAttentionViewController.h */,
 				B5A3DDD91CB2784C006FD7D6 /* LCZAttentionViewController.m */,
 			);
@@ -405,7 +489,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B57BEC3B1CBC8AA30043358F /* backimage.png in Resources */,
 				B5A3DDA21CB2724E006FD7D6 /* Assets.xcassets in Resources */,
+				B57BEC391CBC8A9C0043358F /* contimage.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,17 +564,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B57BEC491CBCF3110043358F /* PicViewController.m in Sources */,
 				B5A3DDE11CB2789A006FD7D6 /* LCZEssenceViewController.m in Sources */,
+				B57BEC371CBC86420043358F /* MyAlertView.m in Sources */,
+				B57BEC461CBCF2620043358F /* VideoViewController.m in Sources */,
 				B5A3DDD71CB2780C006FD7D6 /* LCZMeViewController.m in Sources */,
 				B5A3DDEA1CB29F43006FD7D6 /* UIView+Extension.m in Sources */,
 				B5A3DDF01CB2B7EB006FD7D6 /* MyButton.m in Sources */,
 				B5F4B5871CBA0EFB00BE7183 /* AddtreaViewController.m in Sources */,
 				B5A3DDDA1CB2784C006FD7D6 /* LCZAttentionViewController.m in Sources */,
+				B57BEC4C1CBCF3340043358F /* VoiceViewController.m in Sources */,
 				B5A3DDE61CB28539006FD7D6 /* LCZTabBar.m in Sources */,
 				B5A3DD9D1CB2724E006FD7D6 /* ViewController.m in Sources */,
 				B5A3DDDD1CB27867006FD7D6 /* LCZNewViewController.m in Sources */,
+				B57BEC4F1CBCF3930043358F /* TalkViewController.m in Sources */,
 				B5F4B58A1CBA0F1900BE7183 /* AddTreaView.m in Sources */,
 				B5A3DDD01CB275C2006FD7D6 /* LCZNavigationController.m in Sources */,
+				B57BEC431CBCF1F40043358F /* RecommendViewController.m in Sources */,
 				B5A3DDCD1CB273B6006FD7D6 /* LCZTabBarController.m in Sources */,
 				B5A3DDED1CB2B74F006FD7D6 /* LCZPublicView.m in Sources */,
 				B5A3DD9A1CB2724E006FD7D6 /* AppDelegate.m in Sources */,
@@ -614,6 +706,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -633,6 +726,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",

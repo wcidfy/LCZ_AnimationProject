@@ -28,6 +28,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor=[UIColor whiteColor];
+    
+    [self setNav];
     //配置用户Key
     [AMapSearchServices sharedServices].apiKey = @"05f7aa645efaaa9b79af7d35410927d7";
     
@@ -51,20 +53,31 @@
     //发起周边搜索
     [_search AMapPOIAroundSearch: request];
     
+   
     
+
+}
+-(void)setNav
+{
+    UIView *view=[[UIView alloc]init];
+    view.frame=CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 64);
+    view.backgroundColor=[UIColor grayColor];
+    [self.view addSubview:view];
     
+    UIButton *but=[UIButton buttonWithType:UIButtonTypeCustom];
+    but.frame=CGRectMake(0, 0, 60, 64);
+    but.titleLabel.textAlignment=NSTextAlignmentCenter;
+    [but setTitle:@"返回" forState:UIControlStateNormal];
+    [but setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [but addTarget:self action:@selector(backClick) forControlEvents:UIControlEventTouchUpInside];
+    [view addSubview:but];
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+}
+
+-(void)backClick
+{
+    [self.navigationController popViewControllerAnimated:YES];
+
 
 }
 //实现POI搜索对应的回调函数
