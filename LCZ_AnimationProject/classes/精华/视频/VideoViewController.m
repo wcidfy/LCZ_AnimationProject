@@ -27,6 +27,7 @@ static NSString *cellID=@"cellid";
     _tableview.frame=CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height-64-50);
     _tableview.delegate=self;
     _tableview.dataSource=self;
+    [_tableview setHeight:40];
     [self.view addSubview:_tableview];
     [self setRefre];
     
@@ -64,18 +65,24 @@ static NSString *cellID=@"cellid";
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.topFrame.count;
+    return 10;
 }
 
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     
-    TopViewCell *cell=[tableView dequeueReusableCellWithIdentifier:cellID];
+//    TopViewCell *cell=[tableView dequeueReusableCellWithIdentifier:cellID];
+//    if (cell==nil) {
+//        cell=[[TopViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID];
+//    }
+//    cell.topFrame=self.topFrame[indexPath.row];
+    UITableViewCell *cell=[tableView dequeueReusableCellWithIdentifier:cellID];
     if (cell==nil) {
-        cell=[[TopViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID];
+        cell=[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID];
     }
-    cell.topFrame=self.topFrame[indexPath.row];
+    cell.textLabel.text=@"12";
+    cell.backgroundColor=[UIColor redColor];
     return cell;
 }
 
@@ -84,6 +91,7 @@ static NSString *cellID=@"cellid";
 {
     TopFrame *topframe=self.topFrame[indexPath.row];
     return topframe.cellHeight;
+    return 30;
 
 }
 
