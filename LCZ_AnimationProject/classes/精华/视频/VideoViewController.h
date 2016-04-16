@@ -10,6 +10,6 @@
 /**
  *  视频
  */
-@interface VideoViewController : UITableViewController
+@interface VideoViewController : UIViewController
 
 @end

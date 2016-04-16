@@ -7,23 +7,26 @@
 //
 
 #import "RecommendViewController.h"
-
+#import "recomTool.h"
+#import "TopModel.h"
 @interface RecommendViewController ()
-
+@property (nonatomic,assign) NSInteger page;
+@property (nonatomic,strong) NSMutableArray *hotComments;
+@property (nonatomic,strong) NSMutableArray *lastestComments;
 @end
 
 @implementation RecommendViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor=[UIColor redColor];
+    self.view.backgroundColor=[UIColor whiteColor];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     [self setRefresh];
-
+    self.tableView.tableFooterView=[UIView new];
     
 }
 //设置刷新控件
@@ -39,8 +42,17 @@
 }
 -(void)getNewData
 {
-    sleep(3);
-    [self.tableView.mj_header endRefreshing];
+//    self.page = 1;
+  
+//    [recomTool getDataWithArrayType:TopicTypeTalk parameterA:@"list" block:^(id json, id maxtime) {
+//        
+//    }];
+
+    [recomTool getDataWithArrayType:TopicTypeTalk parameterA:@"newlist" block:^(id json, id param) {
+        NSLog(@"123123");
+    }];
+    
+    
 
 }
 - (void)didReceiveMemoryWarning {

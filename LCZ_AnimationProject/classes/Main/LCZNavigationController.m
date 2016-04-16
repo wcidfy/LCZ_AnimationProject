@@ -13,7 +13,15 @@
 @end
 
 @implementation LCZNavigationController
-
+//只初始化一次
++ (void)initialize
+{
+    UIImage *background = [UIImage imageNamed:@"navigationbarBackgroundWhite"];
+    //设置导航条
+    UINavigationBar *bar = [UINavigationBar appearance];
+    [bar setBackgroundImage:background forBarMetrics:UIBarMetricsDefault];
+    [bar setTitleTextAttributes:@{NSFontAttributeName : [UIFont boldSystemFontOfSize:20]}];
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.

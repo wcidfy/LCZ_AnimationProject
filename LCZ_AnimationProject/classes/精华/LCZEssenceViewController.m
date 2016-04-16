@@ -26,6 +26,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor=[UIColor whiteColor];
     self.automaticallyAdjustsScrollViewInsets = NO;
 
     // Do any additional setup after loading the view.
@@ -94,7 +95,7 @@
     btn.enabled = NO;
     self.seletedBtn = btn;
     //指示器动画
-    [UIView animateWithDuration:0.2 animations:^{
+    [UIView animateWithDuration:0.02 animations:^{
         //必须在这里才设置指示器的宽度，要不宽度会计算错误
         self.redView.width = btn.titleLabel.width;
         self.redView.centerX = btn.centerX;
@@ -111,7 +112,11 @@
 {
     if (_scrollView==nil) {
         _scrollView=[[UIScrollView alloc]init];
-        _scrollView.frame=self.view.bounds;
+//        _scrollView.frame=self.view.bounds;
+        _scrollView.y=64;
+        _scrollView.x=0;
+        _scrollView.width=self.view.bounds.size.width;
+        _scrollView.height=self.view.bounds.size.height;
         _scrollView.delegate=self;
         _scrollView.pagingEnabled=YES;
         _scrollView.contentSize=CGSizeMake(_scrollView.width*self.childViewControllers.count, 0);
