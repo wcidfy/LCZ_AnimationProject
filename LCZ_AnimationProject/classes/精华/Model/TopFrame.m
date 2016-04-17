@@ -7,18 +7,19 @@
 //
 
 #import "TopFrame.h"
+#import "XFUserModel.h"
 static CGFloat avatarMaxY = 50;
 static CGFloat inset = 10;
 static CGFloat toolBarHeight = 50;
 static CGFloat textX = 14;
-
+static CGFloat topCmtH = 20;
 @implementation TopFrame
 -(void)setTopic:(TopModel *)topic
 
 {
     _topic=topic;
     CGFloat textW = SCREEN_WIDTH - 28;
-    CGFloat textH = [topic.text boundingRectWithSize:CGSizeMake(textW , MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : [UIFont systemFontOfSize:14]} context:nil].size.height;
+    CGFloat textH = 10+[topic.text boundingRectWithSize:CGSizeMake(textW , MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : [UIFont systemFontOfSize:14]} context:nil].size.height;
     //最大的Y值
     CGFloat maxY = avatarMaxY + inset*2 + textH ;
     if (topic.type != TopicTypeTalk) {
@@ -39,7 +40,15 @@ static CGFloat textX = 14;
         maxY = contentViewY + contentViewH + inset;
         
     }
-
+    //如果有热门评论
+    if(topic.top_cmt){
+        
+        NSString *content = [NSString stringWithFormat:@"%@ : %@", topic.top_cmt.user.username, topic.top_cmt.content];
+        CGFloat topcmtContentH = [content boundingRectWithSize:CGSizeMake(textW, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : [UIFont systemFontOfSize:13]} context:nil].size.height;
+        
+        maxY = topcmtContentH + topCmtH + maxY + inset;
+        
+    }
     
     
     //设置cell的高度

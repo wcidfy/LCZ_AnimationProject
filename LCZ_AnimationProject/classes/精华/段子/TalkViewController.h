@@ -10,6 +10,6 @@
 /**
  *  段子
  */
-@interface TalkViewController : UITableViewController
+@interface TalkViewController : UIViewController
 
 @end

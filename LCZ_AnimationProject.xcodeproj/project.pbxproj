@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		B52747A31CC1CE75007F423B /* VideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = B52747A21CC1CE75007F423B /* VideoView.m */; };
+		B52747A71CC32304007F423B /* BottonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B52747A61CC32304007F423B /* BottonCell.m */; };
+		B52747A91CC34B94007F423B /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B52747A81CC34B94007F423B /* MediaPlayer.framework */; };
+		B52747AC1CC35292007F423B /* KRVideoPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = B52747AB1CC35292007F423B /* KRVideoPlayerController.m */; };
+		B52747AF1CC3551A007F423B /* KRVideoPlayerControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = B52747AE1CC3551A007F423B /* KRVideoPlayerControlView.m */; };
 		B57BEC371CBC86420043358F /* MyAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = B57BEC361CBC86420043358F /* MyAlertView.m */; };
 		B57BEC391CBC8A9C0043358F /* contimage.png in Resources */ = {isa = PBXBuildFile; fileRef = B57BEC381CBC8A9C0043358F /* contimage.png */; };
 		B57BEC3B1CBC8AA30043358F /* backimage.png in Resources */ = {isa = PBXBuildFile; fileRef = B57BEC3A1CBC8AA30043358F /* backimage.png */; };
@@ -65,8 +69,15 @@
 /* Begin PBXFileReference section */
 		654B270ED977751E5EF22C3A /* Pods_LCZ_AnimationProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LCZ_AnimationProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAC054889792B04E458BD764 /* Pods-LCZ_AnimationProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LCZ_AnimationProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LCZ_AnimationProject/Pods-LCZ_AnimationProject.debug.xcconfig"; sourceTree = "<group>"; };
-		B52747A11CC1CE75007F423B /* VideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoView.h; sourceTree = "<group>"; };
-		B52747A21CC1CE75007F423B /* VideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoView.m; sourceTree = "<group>"; };
+		B52747A11CC1CE75007F423B /* VideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VideoView.h; path = ../../View/VideoView.h; sourceTree = "<group>"; };
+		B52747A21CC1CE75007F423B /* VideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VideoView.m; path = ../../View/VideoView.m; sourceTree = "<group>"; };
+		B52747A51CC32304007F423B /* BottonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BottonCell.h; sourceTree = "<group>"; };
+		B52747A61CC32304007F423B /* BottonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BottonCell.m; sourceTree = "<group>"; };
+		B52747A81CC34B94007F423B /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		B52747AA1CC35292007F423B /* KRVideoPlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KRVideoPlayerController.h; sourceTree = "<group>"; };
+		B52747AB1CC35292007F423B /* KRVideoPlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KRVideoPlayerController.m; sourceTree = "<group>"; };
+		B52747AD1CC3551A007F423B /* KRVideoPlayerControlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KRVideoPlayerControlView.h; sourceTree = "<group>"; };
+		B52747AE1CC3551A007F423B /* KRVideoPlayerControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KRVideoPlayerControlView.m; sourceTree = "<group>"; };
 		B57BEC351CBC86420043358F /* MyAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAlertView.h; sourceTree = "<group>"; };
 		B57BEC361CBC86420043358F /* MyAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAlertView.m; sourceTree = "<group>"; };
 		B57BEC381CBC8A9C0043358F /* contimage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = contimage.png; sourceTree = "<group>"; };
@@ -143,6 +154,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B52747A91CC34B94007F423B /* MediaPlayer.framework in Frameworks */,
 				B5F4B5801CB38B0A00BE7183 /* AVFoundation.framework in Frameworks */,
 				D060076790BC88F39E0533F2 /* Pods_LCZ_AnimationProject.framework in Frameworks */,
 			);
@@ -165,6 +177,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B52747A41CC3172B007F423B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B52747A11CC1CE75007F423B /* VideoView.h */,
+				B52747A21CC1CE75007F423B /* VideoView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		B57BEC341CBC85E80043358F /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -190,8 +211,13 @@
 		B57BEC3D1CBCF0EB0043358F /* 视频 */ = {
 			isa = PBXGroup;
 			children = (
+				B52747AA1CC35292007F423B /* KRVideoPlayerController.h */,
+				B52747AB1CC35292007F423B /* KRVideoPlayerController.m */,
+				B52747AD1CC3551A007F423B /* KRVideoPlayerControlView.h */,
+				B52747AE1CC3551A007F423B /* KRVideoPlayerControlView.m */,
 				B57BEC441CBCF2620043358F /* VideoViewController.h */,
 				B57BEC451CBCF2620043358F /* VideoViewController.m */,
+				B52747A41CC3172B007F423B /* View */,
 			);
 			path = "视频";
 			sourceTree = "<group>";
@@ -228,8 +254,8 @@
 			children = (
 				B57BEC511CBE2EC40043358F /* TopViewCell.h */,
 				B57BEC521CBE2EC40043358F /* TopViewCell.m */,
-				B52747A11CC1CE75007F423B /* VideoView.h */,
-				B52747A21CC1CE75007F423B /* VideoView.m */,
+				B52747A51CC32304007F423B /* BottonCell.h */,
+				B52747A61CC32304007F423B /* BottonCell.m */,
 			);
 			name = View;
 			path = "精华/View";
@@ -440,6 +466,7 @@
 		E583A0EAF1EB14C4729E168F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B52747A81CC34B94007F423B /* MediaPlayer.framework */,
 				B5F4B57F1CB38B0A00BE7183 /* AVFoundation.framework */,
 				654B270ED977751E5EF22C3A /* Pods_LCZ_AnimationProject.framework */,
 			);
@@ -636,6 +663,7 @@
 				B57BEC371CBC86420043358F /* MyAlertView.m in Sources */,
 				B57BEC461CBCF2620043358F /* VideoViewController.m in Sources */,
 				B57BEC631CBE3A1B0043358F /* HttpTool.m in Sources */,
+				B52747AC1CC35292007F423B /* KRVideoPlayerController.m in Sources */,
 				B5A3DDD71CB2780C006FD7D6 /* LCZMeViewController.m in Sources */,
 				B57BEC691CBE4DBC0043358F /* TopFrame.m in Sources */,
 				B57BEC5F1CBE392F0043358F /* XFUserModel.m in Sources */,
@@ -647,6 +675,8 @@
 				B57BEC4C1CBCF3340043358F /* VoiceViewController.m in Sources */,
 				B5A3DDE61CB28539006FD7D6 /* LCZTabBar.m in Sources */,
 				B5A3DD9D1CB2724E006FD7D6 /* ViewController.m in Sources */,
+				B52747AF1CC3551A007F423B /* KRVideoPlayerControlView.m in Sources */,
+				B52747A71CC32304007F423B /* BottonCell.m in Sources */,
 				B57BEC5C1CBE384E0043358F /* XFCommentModel.m in Sources */,
 				B5A3DDDD1CB27867006FD7D6 /* LCZNewViewController.m in Sources */,
 				B57BEC4F1CBCF3930043358F /* TalkViewController.m in Sources */,

@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "TopModel.h"
+
 @interface VideoView : UIView
 /**
  *  video 图片

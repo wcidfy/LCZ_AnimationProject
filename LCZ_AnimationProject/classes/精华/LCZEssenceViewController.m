@@ -112,11 +112,11 @@
 {
     if (_scrollView==nil) {
         _scrollView=[[UIScrollView alloc]init];
-//        _scrollView.frame=self.view.bounds;
-        _scrollView.y=64;
-        _scrollView.x=0;
-        _scrollView.width=self.view.bounds.size.width;
-        _scrollView.height=self.view.bounds.size.height;
+        _scrollView.frame=self.view.bounds;
+//        _scrollView.y=0;
+//        _scrollView.x=0;
+//        _scrollView.width=self.view.bounds.size.width;
+//        _scrollView.height=self.view.bounds.size.height;
         _scrollView.delegate=self;
         _scrollView.pagingEnabled=YES;
         _scrollView.contentSize=CGSizeMake(_scrollView.width*self.childViewControllers.count, 0);
@@ -150,7 +150,7 @@
 {
     CGPoint pt=scrollView.contentOffset;
     NSInteger index=pt.x/scrollView.width;
-    UITabBarController *tableVc=self.childViewControllers[index];
+    UIViewController *tableVc=self.childViewControllers[index];
     tableVc.view.x=scrollView.contentOffset.x;
     tableVc.view.y=0;
     tableVc.view.height=scrollView.height;
