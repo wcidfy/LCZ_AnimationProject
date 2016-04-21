@@ -43,6 +43,8 @@
 		B5A3DDEA1CB29F43006FD7D6 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A3DDE91CB29F43006FD7D6 /* UIView+Extension.m */; };
 		B5A3DDED1CB2B74F006FD7D6 /* LCZPublicView.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A3DDEC1CB2B74F006FD7D6 /* LCZPublicView.m */; };
 		B5A3DDF01CB2B7EB006FD7D6 /* MyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A3DDEF1CB2B7EB006FD7D6 /* MyButton.m */; };
+		B5CCC57A1CC8750C00633F90 /* LogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5CCC5791CC8750C00633F90 /* LogViewController.m */; };
+		B5CCC57D1CC8767D00633F90 /* LogView.m in Sources */ = {isa = PBXBuildFile; fileRef = B5CCC57C1CC8767D00633F90 /* LogView.m */; };
 		B5F4B5801CB38B0A00BE7183 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5F4B57F1CB38B0A00BE7183 /* AVFoundation.framework */; };
 		B5F4B5871CBA0EFB00BE7183 /* AddtreaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5F4B5861CBA0EFB00BE7183 /* AddtreaViewController.m */; };
 		B5F4B58A1CBA0F1900BE7183 /* AddTreaView.m in Sources */ = {isa = PBXBuildFile; fileRef = B5F4B5891CBA0F1900BE7183 /* AddTreaView.m */; };
@@ -141,6 +143,10 @@
 		B5A3DDEC1CB2B74F006FD7D6 /* LCZPublicView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCZPublicView.m; sourceTree = "<group>"; };
 		B5A3DDEE1CB2B7EB006FD7D6 /* MyButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyButton.h; sourceTree = "<group>"; };
 		B5A3DDEF1CB2B7EB006FD7D6 /* MyButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyButton.m; sourceTree = "<group>"; };
+		B5CCC5781CC8750C00633F90 /* LogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogViewController.h; sourceTree = "<group>"; };
+		B5CCC5791CC8750C00633F90 /* LogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogViewController.m; sourceTree = "<group>"; };
+		B5CCC57B1CC8767D00633F90 /* LogView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogView.h; sourceTree = "<group>"; };
+		B5CCC57C1CC8767D00633F90 /* LogView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogView.m; sourceTree = "<group>"; };
 		B5F4B57F1CB38B0A00BE7183 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		B5F4B5851CBA0EFB00BE7183 /* AddtreaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddtreaViewController.h; sourceTree = "<group>"; };
 		B5F4B5861CBA0EFB00BE7183 /* AddtreaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddtreaViewController.m; sourceTree = "<group>"; };
@@ -193,6 +199,8 @@
 				B57BEC381CBC8A9C0043358F /* contimage.png */,
 				B57BEC351CBC86420043358F /* MyAlertView.h */,
 				B57BEC361CBC86420043358F /* MyAlertView.m */,
+				B5CCC57B1CC8767D00633F90 /* LogView.h */,
+				B5CCC57C1CC8767D00633F90 /* LogView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -415,6 +423,8 @@
 				B57BEC341CBC85E80043358F /* View */,
 				B5A3DDD81CB2784C006FD7D6 /* LCZAttentionViewController.h */,
 				B5A3DDD91CB2784C006FD7D6 /* LCZAttentionViewController.m */,
+				B5CCC5781CC8750C00633F90 /* LogViewController.h */,
+				B5CCC5791CC8750C00633F90 /* LogViewController.m */,
 			);
 			path = "关注";
 			sourceTree = "<group>";
@@ -682,6 +692,7 @@
 				B57BEC4F1CBCF3930043358F /* TalkViewController.m in Sources */,
 				B5F4B58A1CBA0F1900BE7183 /* AddTreaView.m in Sources */,
 				B5A3DDD01CB275C2006FD7D6 /* LCZNavigationController.m in Sources */,
+				B5CCC57D1CC8767D00633F90 /* LogView.m in Sources */,
 				B57BEC431CBCF1F40043358F /* RecommendViewController.m in Sources */,
 				B57BEC661CBE3E700043358F /* recomTool.m in Sources */,
 				B5A3DDCD1CB273B6006FD7D6 /* LCZTabBarController.m in Sources */,
@@ -689,6 +700,7 @@
 				B5A3DD9A1CB2724E006FD7D6 /* AppDelegate.m in Sources */,
 				B57BEC531CBE2EC40043358F /* TopViewCell.m in Sources */,
 				B5A3DD971CB2724E006FD7D6 /* main.m in Sources */,
+				B5CCC57A1CC8750C00633F90 /* LogViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -812,6 +824,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CLANG_ENABLE_MODULE_DEBUGGING = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -821,8 +834,11 @@
 				INFOPLIST_FILE = LCZ_AnimationProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "lxx.adqer.com.LCZ-AnimationProject";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos9.2;
+				VALID_ARCHS = "armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -834,6 +850,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CLANG_ENABLE_MODULE_DEBUGGING = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -843,8 +860,11 @@
 				INFOPLIST_FILE = LCZ_AnimationProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "lxx.adqer.com.LCZ-AnimationProject";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos9.2;
+				VALID_ARCHS = "armv7 armv7s";
 			};
 			name = Release;
 		};

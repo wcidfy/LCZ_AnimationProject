@@ -7,6 +7,7 @@
 //
 
 #import "LCZAttentionViewController.h"
+#import "LogViewController.h"
 #import "MyAlertView.h"
 @interface LCZAttentionViewController ()
 
@@ -27,26 +28,23 @@
 }
 -(void)butClick
 {
-//    MyAlertView *alert=[[MyAlertView alloc] initWithTitle:@"密码修改"
-//                                                  message:nil
-//                                                 delegate:self
-//                                        cancelButtonTitle:@"确定"
-//                                        otherButtonTitles:@"取消", nil];
-//    [alert show];
-    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"文本对话框" message:@"登录和密码对话框示例" preferredStyle:UIAlertControllerStyleAlert];
-    [alertController addTextFieldWithConfigurationHandler:^(UITextField *textField){
-        textField.placeholder = @"登录";
-      
-    }];
-    [alertController addTextFieldWithConfigurationHandler:^(UITextField *textField) {
-        textField.placeholder = @"密码";
-        textField.secureTextEntry = YES;
-    }];
-    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
-    UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"好的" style:UIAlertActionStyleDefault handler:nil];
-    [alertController addAction:cancelAction];
-    [alertController addAction:okAction];
-    [self presentViewController:alertController animated:YES completion:nil];
+
+//    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"文本对话框" message:@"登录和密码对话框示例" preferredStyle:UIAlertControllerStyleAlert];
+//    [alertController addTextFieldWithConfigurationHandler:^(UITextField *textField){
+//        textField.placeholder = @"登录";
+//      
+//    }];
+//    [alertController addTextFieldWithConfigurationHandler:^(UITextField *textField) {
+//        textField.placeholder = @"密码";
+//        textField.secureTextEntry = YES;
+//    }];
+//    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
+//    UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"好的" style:UIAlertActionStyleDefault handler:nil];
+//    [alertController addAction:cancelAction];
+//    [alertController addAction:okAction];
+//    [self presentViewController:alertController animated:YES completion:nil];
+    LogViewController *log=[LogViewController new];
+    [self presentViewController:log animated:YES completion:nil];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

@@ -81,4 +81,10 @@
 
     self.krVideoPlayController.contentURL=url;
 }
+//停止视频的播放
+- (void)reset {
+    [self.krVideoPlayController dismiss];
+    self.krVideoPlayController = nil;
+}
+
 @end

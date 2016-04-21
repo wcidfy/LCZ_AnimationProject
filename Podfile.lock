@@ -16,8 +16,6 @@ PODS:
     - AFNetworking/NSURLSession
   - AMap2DMap (3.3.0)
   - AMapSearch (3.3.0)
-  - Masonry (1.0.0)
-  - MBProgressHUD (0.9.2)
   - MJExtension (3.0.10)
   - MJRefresh (3.1.0)
   - ReactiveCocoa (2.5):
@@ -36,8 +34,6 @@ DEPENDENCIES:
   - AFNetworking
   - AMap2DMap
   - AMapSearch
-  - Masonry
-  - MBProgressHUD
   - MJExtension (~> 3.0.7)
   - MJRefresh (~> 3.1.0)
   - ReactiveCocoa
@@ -48,14 +44,12 @@ SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   AMap2DMap: e53461cdc345375e514579db17dbd721ff9ed9eb
   AMapSearch: cff4faf59c007f7d1f2bae2d7170c3912783981a
-  Masonry: b529bb169217897b6354d4b56b1fada6d475b13d
-  MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
   MJExtension: d86aacb740c87519d20e3cca55b6fa4be6cc7548
   MJRefresh: 743e6404967d1c2c688472ea3ecfde247d872db4
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
   UMengSocial: aba7296602310385114d82c255539a7bef3b7ab0
 
-PODFILE CHECKSUM: 526b1407fc944fb54cab8ae0939d7d88ad6a2b30
+PODFILE CHECKSUM: 42e71096d9b4a17587a32bc12621c0672839f20e
 
 COCOAPODS: 1.0.0.beta.4

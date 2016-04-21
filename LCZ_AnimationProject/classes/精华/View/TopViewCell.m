@@ -37,6 +37,13 @@
 @end
 @implementation TopViewCell
 
+// 从队列里面复用时调用
+- (void)prepareForReuse {
+    
+    [super prepareForReuse];
+    [_videoView reset];
+   
+}
 
 -(instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
@@ -117,7 +124,7 @@
     if (topFrame.topic.type==TopicTypeVideo) {
         self.videoView.topModel=topModel;
         self.videoView.frame=_topFrame.contentViewFrame;
-        self.videoView.backgroundColor=[UIColor redColor];
+//        self.videoView.backgroundColor=[UIColor redColor];
         
        
     }

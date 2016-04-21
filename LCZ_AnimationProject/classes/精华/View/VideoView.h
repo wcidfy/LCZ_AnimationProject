@@ -28,6 +28,6 @@
 @property(nonatomic,strong)UILabel *lablePlayTime;
 
 @property(nonatomic,strong)TopModel *topModel;
-
+- (void)reset;
 
 @end

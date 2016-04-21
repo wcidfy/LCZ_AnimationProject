@@ -85,19 +85,15 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$CONFIGURATION_BUILD_DIR/AFNetworking/AFNetworking.framework"
-  install_framework "$CONFIGURATION_BUILD_DIR/MBProgressHUD/MBProgressHUD.framework"
   install_framework "$CONFIGURATION_BUILD_DIR/MJExtension/MJExtension.framework"
   install_framework "$CONFIGURATION_BUILD_DIR/MJRefresh/MJRefresh.framework"
-  install_framework "$CONFIGURATION_BUILD_DIR/Masonry/Masonry.framework"
   install_framework "$CONFIGURATION_BUILD_DIR/ReactiveCocoa/ReactiveCocoa.framework"
   install_framework "$CONFIGURATION_BUILD_DIR/SDWebImage/SDWebImage.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$CONFIGURATION_BUILD_DIR/AFNetworking/AFNetworking.framework"
-  install_framework "$CONFIGURATION_BUILD_DIR/MBProgressHUD/MBProgressHUD.framework"
   install_framework "$CONFIGURATION_BUILD_DIR/MJExtension/MJExtension.framework"
   install_framework "$CONFIGURATION_BUILD_DIR/MJRefresh/MJRefresh.framework"
-  install_framework "$CONFIGURATION_BUILD_DIR/Masonry/Masonry.framework"
   install_framework "$CONFIGURATION_BUILD_DIR/ReactiveCocoa/ReactiveCocoa.framework"
   install_framework "$CONFIGURATION_BUILD_DIR/SDWebImage/SDWebImage.framework"
 fi
