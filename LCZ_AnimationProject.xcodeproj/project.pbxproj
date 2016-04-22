@@ -45,6 +45,7 @@
 		B5A3DDF01CB2B7EB006FD7D6 /* MyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A3DDEF1CB2B7EB006FD7D6 /* MyButton.m */; };
 		B5CCC57A1CC8750C00633F90 /* LogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5CCC5791CC8750C00633F90 /* LogViewController.m */; };
 		B5CCC57D1CC8767D00633F90 /* LogView.m in Sources */ = {isa = PBXBuildFile; fileRef = B5CCC57C1CC8767D00633F90 /* LogView.m */; };
+		B5CCC5831CC9C2C800633F90 /* ShareButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B5CCC5821CC9C2C800633F90 /* ShareButton.m */; };
 		B5F4B5801CB38B0A00BE7183 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5F4B57F1CB38B0A00BE7183 /* AVFoundation.framework */; };
 		B5F4B5871CBA0EFB00BE7183 /* AddtreaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5F4B5861CBA0EFB00BE7183 /* AddtreaViewController.m */; };
 		B5F4B58A1CBA0F1900BE7183 /* AddTreaView.m in Sources */ = {isa = PBXBuildFile; fileRef = B5F4B5891CBA0F1900BE7183 /* AddTreaView.m */; };
@@ -147,6 +148,8 @@
 		B5CCC5791CC8750C00633F90 /* LogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogViewController.m; sourceTree = "<group>"; };
 		B5CCC57B1CC8767D00633F90 /* LogView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogView.h; sourceTree = "<group>"; };
 		B5CCC57C1CC8767D00633F90 /* LogView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogView.m; sourceTree = "<group>"; };
+		B5CCC5811CC9C2C800633F90 /* ShareButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareButton.h; sourceTree = "<group>"; };
+		B5CCC5821CC9C2C800633F90 /* ShareButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareButton.m; sourceTree = "<group>"; };
 		B5F4B57F1CB38B0A00BE7183 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		B5F4B5851CBA0EFB00BE7183 /* AddtreaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddtreaViewController.h; sourceTree = "<group>"; };
 		B5F4B5861CBA0EFB00BE7183 /* AddtreaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddtreaViewController.m; sourceTree = "<group>"; };
@@ -201,6 +204,8 @@
 				B57BEC361CBC86420043358F /* MyAlertView.m */,
 				B5CCC57B1CC8767D00633F90 /* LogView.h */,
 				B5CCC57C1CC8767D00633F90 /* LogView.m */,
+				B5CCC5811CC9C2C800633F90 /* ShareButton.h */,
+				B5CCC5821CC9C2C800633F90 /* ShareButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -690,6 +695,7 @@
 				B57BEC5C1CBE384E0043358F /* XFCommentModel.m in Sources */,
 				B5A3DDDD1CB27867006FD7D6 /* LCZNewViewController.m in Sources */,
 				B57BEC4F1CBCF3930043358F /* TalkViewController.m in Sources */,
+				B5CCC5831CC9C2C800633F90 /* ShareButton.m in Sources */,
 				B5F4B58A1CBA0F1900BE7183 /* AddTreaView.m in Sources */,
 				B5A3DDD01CB275C2006FD7D6 /* LCZNavigationController.m in Sources */,
 				B5CCC57D1CC8767D00633F90 /* LogView.m in Sources */,
@@ -838,6 +844,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "lxx.adqer.com.LCZ-AnimationProject";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos9.2;
+				TVOS_DEPLOYMENT_TARGET = 9.1;
 				VALID_ARCHS = "armv7 armv7s";
 			};
 			name = Debug;
@@ -864,6 +871,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "lxx.adqer.com.LCZ-AnimationProject";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos9.2;
+				TVOS_DEPLOYMENT_TARGET = 9.1;
 				VALID_ARCHS = "armv7 armv7s";
 			};
 			name = Release;

@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ShareButton.h"
 /**
  *  登录view
  */
@@ -59,4 +60,20 @@
  *  注册按钮
  */
 @property(nonatomic,strong)UIButton *regiButton;
+/**
+ *  快速登录
+ */
+@property(nonatomic,strong)UILabel *quickLogin;
+/**
+ *  扣扣分享
+ */
+@property(nonatomic,strong)ShareButton *qqShare;
+/**
+ *  微博分享
+ */
+@property(nonatomic,strong)ShareButton *sinaShare;
+/**
+ *  腾讯微博分享
+ */
+@property(nonatomic,strong)ShareButton *tencentShare;
 @end

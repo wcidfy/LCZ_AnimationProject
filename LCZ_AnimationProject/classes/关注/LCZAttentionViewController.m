@@ -43,8 +43,9 @@
 //    [alertController addAction:cancelAction];
 //    [alertController addAction:okAction];
 //    [self presentViewController:alertController animated:YES completion:nil];
-    LogViewController *log=[LogViewController new];
-    [self presentViewController:log animated:YES completion:nil];
+        LogViewController *log=[LogViewController new];
+        [self presentViewController:log animated:NO completion:nil];
+   
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
