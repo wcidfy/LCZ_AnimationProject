@@ -36,6 +36,17 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor=[UIColor lightGrayColor];
+    UITapGestureRecognizer *tapGest=[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(touchClick)];
+    [self.view addGestureRecognizer:tapGest];
+}
+-(void)touchClick
+{
+    [_logView.phoneTextFiled resignFirstResponder];
+    [_logView.PassTextFiled resignFirstResponder];
+    [_logView.regiPhoneTextFiled resignFirstResponder];
+    [_logView.SettingPassTextFiled resignFirstResponder];
+
+
 }
 -(void)exitButtonClick
 {

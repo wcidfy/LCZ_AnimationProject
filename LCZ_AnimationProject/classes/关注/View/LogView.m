@@ -33,7 +33,6 @@
         _loginAndRegi=[[UIView alloc]init];
         _loginAndRegi.backgroundColor=[UIColor clearColor];
         [self addSubview:_loginAndRegi];
-        _loginAndRegi.transform=CGAffineTransformMakeScale(0.0000001,0.0000001);
 
         _loginView=[[UIView alloc]init];
         _loginView.backgroundColor=[UIColor grayColor];
@@ -43,6 +42,7 @@
         
         _phoneTextFiled=[[UITextField alloc]init];
         _phoneTextFiled.placeholder=@"请输入手机号";
+        _phoneTextFiled.leftView=[[UIView alloc]initWithFrame:CGRectMake(0, 0, 20, 30)];
         _phoneTextFiled.textColor=[UIColor whiteColor];
         [_loginView addSubview:_phoneTextFiled];
         
@@ -112,10 +112,12 @@
         [_tencentShare setImage:[UIImage imageNamed:@"login_tecent_icon_click"] forState:UIControlStateHighlighted];
         [_tencentShare setTitle:@"腾讯分享" forState:UIControlStateNormal];
         [self addSubview:_tencentShare];
-        _qqShare.transform=CGAffineTransformMakeScale(0, 0);
-        _sinaShare.transform=CGAffineTransformMakeScale(0, 0);
-        _tencentShare.transform=CGAffineTransformMakeScale(0, 0);
         
+            [self SetAnimation:_qqShare];
+            [self SetAnimation:_sinaShare];
+            [self SetAnimation:_tencentShare];
+        
+
         
     }
     return self;
@@ -130,7 +132,7 @@
     _phoneTextFiled.frame=CGRectMake(0, 10,_loginView.width , 30);
     whileLine.frame=CGRectMake(0, 40, _loginView.width, 1);
     _PassTextFiled.frame=CGRectMake(0, 41,_loginView.width, 30);
-    _loginButton.frame=CGRectMake(20, _loginView.x+80+10, _loginView.width, 30);
+    _loginButton.frame=CGRectMake(20, _loginView.x+80+10, _loginView.width, 40);
     
     
     
@@ -139,23 +141,22 @@
     _regiPhoneTextFiled.frame=CGRectMake(0, 10,_regiView.width , 30);
     whileLine1.frame=CGRectMake(0, 40, _regiView.width, 1);
     _SettingPassTextFiled.frame=CGRectMake(0, 41,_regiView.width, 30);
-    _regiButton.frame=CGRectMake(LCZViewWidth+20,110, _regiView.width, 30);
+    _regiButton.frame=CGRectMake(LCZViewWidth+20,110, _regiView.width, 40);
     
     
     _qqShare.frame=CGRectMake(20, LCZViewHeight-110, 70, 100);
     CGFloat index=(LCZViewWidth-70*3-40)/2;
     _sinaShare.frame=CGRectMake(index+70+20, LCZViewHeight-110, 70, 100);
     _tencentShare.frame=CGRectMake(index*2+140+20,  LCZViewHeight-110, 70, 100);
-    _quickLogin.frame=CGRectMake(0, LCZViewHeight-130, LCZViewWidth, 20);
+    _quickLogin.frame=CGRectMake(0, LCZViewHeight-140, LCZViewWidth, 20);
     [self setAnimation];
+
+   
    
 }
 -(void)setAnimation
 {
-    //快速登录动画
-    [self setupAnimationWithStartRect:CGRectMake(self.quickLogin.width/2, 0, 0, CGRectGetHeight(self.quickLogin.frame)) endRect:CGRectMake(0, 0, CGRectGetWidth(self.quickLogin.frame), CGRectGetHeight(self.quickLogin.frame)) object:self.quickLogin duration:1];
-
-    // 退出按钮动画
+        // 退出按钮动画
     [UIView animateWithDuration:1.0 animations:^{
         self.exitButton.transform = CGAffineTransformMakeRotation(M_PI);
         
@@ -163,14 +164,12 @@
     
 
         [UIView animateWithDuration:0.5 delay:0.1 usingSpringWithDamping:0.25 initialSpringVelocity:0 options:UIViewAnimationOptionTransitionCurlUp animations:^{
-            _loginAndRegi.y=150;
-            _qqShare.transform=CGAffineTransformMakeScale(1, 1);
-            _sinaShare.transform=CGAffineTransformMakeScale(1, 1);
-            _tencentShare.transform=CGAffineTransformMakeScale(1, 1);
+            _loginAndRegi.y=LCZViewHeight*0.15;
+          
            
         } completion:^(BOOL finished) {
             [self layoutIfNeeded];
-            _loginAndRegi.y=LCZViewHeight*0.15;
+            
             _loginAndRegi.transform=CGAffineTransformMakeScale(1, 1);
             
 
@@ -181,15 +180,11 @@
             
         }];
 
-        
+    //快速登录动画
+    [self setupAnimationWithStartRect:CGRectMake(self.quickLogin.width/2, 0, 0, CGRectGetHeight(self.quickLogin.frame)) endRect:CGRectMake(0, 0, CGRectGetWidth(self.quickLogin.frame), CGRectGetHeight(self.quickLogin.frame)) object:self.quickLogin duration:1];
     
+   
     
-    
-    
-    
- 
-
-
 
 }
 -(UIButton *)getButton
@@ -218,6 +213,29 @@
     animation.fromValue = (__bridge id _Nullable)(beginPath.CGPath);
     animation.toValue = (__bridge id _Nullable)(endPath.CGPath);
     [quickMask addAnimation:animation forKey:@"path"];
+    
+}
+-(void)SetAnimation:(UIView *)view
+{
+    
+    [UIView animateWithDuration:1 delay:0 usingSpringWithDamping:1 initialSpringVelocity:10 options:UIViewAnimationOptionCurveLinear animations:^{
+        
+    } completion:^(BOOL finished) {
+        [UIView animateWithDuration:0.1 delay:0 usingSpringWithDamping:1 initialSpringVelocity:10 options:UIViewAnimationOptionCurveLinear animations:^{
+            view.transform=CGAffineTransformMakeScale(0.01, 0.01);
+            
+        } completion:^(BOOL finished) {
+            [UIView animateWithDuration:0.5 delay:0.2 usingSpringWithDamping:0.5 initialSpringVelocity:10 options:UIViewAnimationOptionCurveLinear animations:^{
+                view.transform=CGAffineTransformMakeScale(1, 1);
+                
+            } completion:^(BOOL finished) {
+                [UIView animateWithDuration:0.3 delay:0 usingSpringWithDamping:0.5 initialSpringVelocity:10 options:UIViewAnimationOptionTransitionCurlDown animations:^{
+                    [self layoutIfNeeded];
+                } completion:nil];
+            }];
+        }];
+    }];
+    
     
 }
 @end
