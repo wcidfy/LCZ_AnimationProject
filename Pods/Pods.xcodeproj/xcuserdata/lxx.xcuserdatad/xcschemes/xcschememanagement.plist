@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>KxMenu.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>MJExtension.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -37,17 +42,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0D81DD6D716B0DBB456F8ADEB1B55AE0</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>0D9A6810A1C1455866F738A23F36718E</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>1C3436CEA5C3D39764C5F54374794ECB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>612CF596832584C4E8494A812E064D0D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6820846829ED020BAD5FAE69FEDDC861</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -62,7 +67,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>860A54FF4FDB9F9AF991DB06A1742344</key>
+		<key>AE5BDE636053D554002F44E3AEE9C99B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FA7A5D946A3BA4F4D906EFBEE9AB3298</key>
 		<dict>
 			<key>primary</key>
 			<true/>

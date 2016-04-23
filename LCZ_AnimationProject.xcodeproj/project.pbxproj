@@ -47,9 +47,6 @@
 		B5CCC57D1CC8767D00633F90 /* LogView.m in Sources */ = {isa = PBXBuildFile; fileRef = B5CCC57C1CC8767D00633F90 /* LogView.m */; };
 		B5CCC5831CC9C2C800633F90 /* ShareButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B5CCC5821CC9C2C800633F90 /* ShareButton.m */; };
 		B5CCC5861CCB22D600633F90 /* ChatListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5CCC5851CCB22D600633F90 /* ChatListViewController.m */; };
-		B5CCC5891CCB5C0700633F90 /* KxMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = B5CCC5881CCB5C0700633F90 /* KxMenu.m */; };
-		B5CCC58C1CCB5D7400633F90 /* UIColor+RCColor.m in Sources */ = {isa = PBXBuildFile; fileRef = B5CCC58B1CCB5D7400633F90 /* UIColor+RCColor.m */; };
-		B5CCC58F1CCB5D9100633F90 /* UIImage+RCImage.m in Sources */ = {isa = PBXBuildFile; fileRef = B5CCC58E1CCB5D9100633F90 /* UIImage+RCImage.m */; };
 		B5F4B5801CB38B0A00BE7183 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5F4B57F1CB38B0A00BE7183 /* AVFoundation.framework */; };
 		B5F4B5871CBA0EFB00BE7183 /* AddtreaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5F4B5861CBA0EFB00BE7183 /* AddtreaViewController.m */; };
 		B5F4B58A1CBA0F1900BE7183 /* AddTreaView.m in Sources */ = {isa = PBXBuildFile; fileRef = B5F4B5891CBA0F1900BE7183 /* AddTreaView.m */; };
@@ -156,12 +153,6 @@
 		B5CCC5821CC9C2C800633F90 /* ShareButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareButton.m; sourceTree = "<group>"; };
 		B5CCC5841CCB22D600633F90 /* ChatListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatListViewController.h; sourceTree = "<group>"; };
 		B5CCC5851CCB22D600633F90 /* ChatListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatListViewController.m; sourceTree = "<group>"; };
-		B5CCC5871CCB5C0700633F90 /* KxMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KxMenu.h; sourceTree = "<group>"; };
-		B5CCC5881CCB5C0700633F90 /* KxMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KxMenu.m; sourceTree = "<group>"; };
-		B5CCC58A1CCB5D7400633F90 /* UIColor+RCColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+RCColor.h"; sourceTree = "<group>"; };
-		B5CCC58B1CCB5D7400633F90 /* UIColor+RCColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+RCColor.m"; sourceTree = "<group>"; };
-		B5CCC58D1CCB5D9100633F90 /* UIImage+RCImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RCImage.h"; sourceTree = "<group>"; };
-		B5CCC58E1CCB5D9100633F90 /* UIImage+RCImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RCImage.m"; sourceTree = "<group>"; };
 		B5F4B57F1CB38B0A00BE7183 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		B5F4B5851CBA0EFB00BE7183 /* AddtreaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddtreaViewController.h; sourceTree = "<group>"; };
 		B5F4B5861CBA0EFB00BE7183 /* AddtreaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddtreaViewController.m; sourceTree = "<group>"; };
@@ -428,12 +419,6 @@
 		B5A3DDD21CB2776F006FD7D6 /* 最新 */ = {
 			isa = PBXGroup;
 			children = (
-				B5CCC58A1CCB5D7400633F90 /* UIColor+RCColor.h */,
-				B5CCC58B1CCB5D7400633F90 /* UIColor+RCColor.m */,
-				B5CCC5871CCB5C0700633F90 /* KxMenu.h */,
-				B5CCC5881CCB5C0700633F90 /* KxMenu.m */,
-				B5CCC58D1CCB5D9100633F90 /* UIImage+RCImage.h */,
-				B5CCC58E1CCB5D9100633F90 /* UIImage+RCImage.m */,
 				B5A3DDDB1CB27866006FD7D6 /* LCZNewViewController.h */,
 				B5A3DDDC1CB27867006FD7D6 /* LCZNewViewController.m */,
 				B5CCC5841CCB22D600633F90 /* ChatListViewController.h */,
@@ -698,11 +683,9 @@
 				B57BEC371CBC86420043358F /* MyAlertView.m in Sources */,
 				B57BEC461CBCF2620043358F /* VideoViewController.m in Sources */,
 				B57BEC631CBE3A1B0043358F /* HttpTool.m in Sources */,
-				B5CCC5891CCB5C0700633F90 /* KxMenu.m in Sources */,
 				B5CCC5861CCB22D600633F90 /* ChatListViewController.m in Sources */,
 				B52747AC1CC35292007F423B /* KRVideoPlayerController.m in Sources */,
 				B5A3DDD71CB2780C006FD7D6 /* LCZMeViewController.m in Sources */,
-				B5CCC58F1CCB5D9100633F90 /* UIImage+RCImage.m in Sources */,
 				B57BEC691CBE4DBC0043358F /* TopFrame.m in Sources */,
 				B57BEC5F1CBE392F0043358F /* XFUserModel.m in Sources */,
 				B5A3DDEA1CB29F43006FD7D6 /* UIView+Extension.m in Sources */,
@@ -729,7 +712,6 @@
 				B5A3DD9A1CB2724E006FD7D6 /* AppDelegate.m in Sources */,
 				B57BEC531CBE2EC40043358F /* TopViewCell.m in Sources */,
 				B5A3DD971CB2724E006FD7D6 /* main.m in Sources */,
-				B5CCC58C1CCB5D7400633F90 /* UIColor+RCColor.m in Sources */,
 				B5CCC57A1CC8750C00633F90 /* LogViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

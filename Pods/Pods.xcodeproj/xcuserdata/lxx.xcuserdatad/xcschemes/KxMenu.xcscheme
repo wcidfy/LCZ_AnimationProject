@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'AE5BDE636053D554002F44E3AEE9C99B'
-               BlueprintName = 'SDWebImage'
+               BlueprintIdentifier = '6820846829ED020BAD5FAE69FEDDC861'
+               BlueprintName = 'KxMenu'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'SDWebImage.framework'>
+               BuildableName = 'KxMenu.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

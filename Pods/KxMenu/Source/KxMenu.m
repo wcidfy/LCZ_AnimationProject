@@ -38,10 +38,6 @@
 
 #import "KxMenu.h"
 #import <QuartzCore/QuartzCore.h>
-#pragma GCC diagnostic ignored "-Wundeclared-selector"
-#import "UIColor+RCColor.h"
-#import "UIImage+RCImage.h"
-
 
 const CGFloat kArrowSize = 12.f;
 
@@ -72,7 +68,7 @@ const CGFloat kArrowSize = 12.f;
 {
     UIView *touched = [[touches anyObject] view];
     if (touched == self) {
-
+        
         for (UIView *v in self.subviews) {
             if ([v isKindOfClass:[KxMenuView class]]
                 && [v respondsToSelector:@selector(dismissMenu:)]) {
@@ -208,7 +204,7 @@ typedef enum {
         _arrowDirection = KxMenuViewArrowDirectionUp;
         CGPoint point = (CGPoint){
             rectXM - widthHalf,
-            rectY1 + 20
+            rectY1
         };
         
         if (point.x < kMargin)
@@ -318,7 +314,6 @@ typedef enum {
              menuItems:(NSArray *)menuItems
 {
     _menuItems = menuItems;
-    
     _contentView = [self mkContentView];
     [self addSubview:_contentView];
     
@@ -414,8 +409,7 @@ typedef enum {
     
     for (KxMenuItem *menuItem in _menuItems) {
 
-//        const CGSize titleSize = [menuItem.title sizeWithFont:titleFont];
-        const CGSize titleSize = [menuItem.title sizeWithAttributes:@{NSFontAttributeName:titleFont}];
+        const CGSize titleSize = [menuItem.title sizeWithFont:titleFont];
         const CGSize imageSize = menuItem.image.size;
 
         const CGFloat itemHeight = MAX(titleSize.height, imageSize.height) + kMarginY * 2;
@@ -469,9 +463,8 @@ typedef enum {
             [button addTarget:self
                        action:@selector(performAction:)
              forControlEvents:UIControlEventTouchUpInside];
-            
-            [button setBackgroundImage:selectedImage forState:UIControlStateHighlighted];
-            
+#pragma mark 修改点击效果
+            [button setBackgroundImage:[UIImage imageNamed:@"backimage"] forState:UIControlStateHighlighted];
             [itemView addSubview:button];
         }
         
@@ -571,8 +564,8 @@ typedef enum {
 {
     const CGFloat locations[] = {0,1};
     const CGFloat components[] = {
-        0.216, 0.471, 0.871, 0,
-        0.059, 0.353, 0.839, 0,
+        0.216, 0.471, 0.871, 1,
+        0.059, 0.353, 0.839, 1,
     };
     
     return [self gradientImageWithSize:size locations:locations components:components count:2];
@@ -580,20 +573,19 @@ typedef enum {
 
 + (UIImage *) gradientLine: (CGSize) size
 {
-//    const CGFloat locations[5] = {0,0.2,0.5,0.8,1};
-//    
-//    const CGFloat R = 0.44f, G = 0.44f, B = 0.44f;
-//        
-//    const CGFloat components[20] = {
-//        R,G,B,0.1,
-//        R,G,B,0.4,
-//        R,G,B,0.7,
-//        R,G,B,0.4,
-//        R,G,B,0.1
-//    };
-//    
-//    return [self gradientImageWithSize:size locations:locations components:components count:5];
-    return [UIImage image:[UIImage imageNamed:@"line_x2"] byScalingToSize:size];
+    const CGFloat locations[5] = {0,0.2,0.5,0.8,1};
+    
+    const CGFloat R = 0.44f, G = 0.44f, B = 0.44f;
+        
+    const CGFloat components[20] = {
+        R,G,B,0.1,
+        R,G,B,0.4,
+        R,G,B,0.7,
+        R,G,B,0.4,
+        R,G,B,0.1
+    };
+    
+    return [self gradientImageWithSize:size locations:locations components:components count:5];
 }
 
 + (UIImage *) gradientImageWithSize:(CGSize) size
@@ -621,26 +613,17 @@ typedef enum {
                inContext:UIGraphicsGetCurrentContext()];
 }
 
-
-
 - (void)drawBackground:(CGRect)frame
              inContext:(CGContextRef) context
 {
-//    CGFloat R0 = 0.267, G0 = 0.303, B0 = 0.335;
-//    CGFloat R1 = 0.040, G1 = 0.040, B1 = 0.040;
-    CGFloat R0 = 0.f, G0 = 0.f, B0 = 0.f;
-    CGFloat R1 = 0.f, G1 = 0.f, B1 = 0.f;
-
+    CGFloat R0 = 0.267, G0 = 0.303, B0 = 0.335;
+    CGFloat R1 = 0.040, G1 = 0.040, B1 = 0.040;
     
-//    UIColor *tintColor = [KxMenu tintColor];
-    UIColor *tintColor = [UIColor colorWithHexString:@"0195FF" alpha:1.0f];
-
+    UIColor *tintColor = [KxMenu tintColor];
     if (tintColor) {
         
-        CGFloat a = 0.f ;
+        CGFloat a;
         [tintColor getRed:&R0 green:&G0 blue:&B0 alpha:&a];
-//        [tintColor getRed:&R2 green:&G2 blue:&B2 alpha:&a];
-
     }
     
     CGFloat X0 = frame.origin.x;
@@ -733,40 +716,39 @@ typedef enum {
     UIBezierPath *borderPath = [UIBezierPath bezierPathWithRoundedRect:bodyFrame
                                                           cornerRadius:8];
         
-//    const CGFloat locations[] = {0, 1};
-//    const CGFloat components[] = {
-//        R0, G0, B0, 1,
-//        R1, G1, B1, 0,
-//    };
+    const CGFloat locations[] = {0, 1};
+    const CGFloat components[] = {
+        R0, G0, B0, 1,
+        R1, G1, B1, 1,
+    };
     
-//    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
-//    CGGradientRef gradient = CGGradientCreateWithColorComponents(colorSpace,
-//                                                                 components,
-//                                                                 locations,
-//                                                                 sizeof(locations)/sizeof(locations[0]));
-//    CGColorSpaceRelease(colorSpace);
+    CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
+    CGGradientRef gradient = CGGradientCreateWithColorComponents(colorSpace,
+                                                                 components,
+                                                                 locations,
+                                                                 sizeof(locations)/sizeof(locations[0]));
+    CGColorSpaceRelease(colorSpace);
     
     
-//    [borderPath addClip];
+    [borderPath addClip];
     
-//    CGPoint start, end;
-//    
-//    if (_arrowDirection == KxMenuViewArrowDirectionLeft ||
-//        _arrowDirection == KxMenuViewArrowDirectionRight) {
-//                
-//        start = (CGPoint){X0, Y0};
-//        end = (CGPoint){X1, Y0};
-//        
-//    } else {
-//        
-//        start = (CGPoint){X0, Y0};
-//        end = (CGPoint){X0, Y1};
-//    }
-    [borderPath fill];
+    CGPoint start, end;
     
-//    CGContextDrawLinearGradient(context, gradient, start, end, 0);
+    if (_arrowDirection == KxMenuViewArrowDirectionLeft ||
+        _arrowDirection == KxMenuViewArrowDirectionRight) {
+                
+        start = (CGPoint){X0, Y0};
+        end = (CGPoint){X1, Y0};
+        
+    } else {
+        
+        start = (CGPoint){X0, Y0};
+        end = (CGPoint){X0, Y1};
+    }
     
-//    CGGradientRelease(gradient);    
+    CGContextDrawLinearGradient(context, gradient, start, end, 0);
+    
+    CGGradientRelease(gradient);    
 }
 
 @end

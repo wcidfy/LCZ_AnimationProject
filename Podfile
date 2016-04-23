@@ -10,5 +10,6 @@ pod 'MJRefresh', '~> 3.1.0'
 pod 'AMap2DMap'
 pod 'AMapSearch'
 pod 'RongCloudIMKit', '2.4.0'
+pod 'KxMenu'
 end
 

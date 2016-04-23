@@ -76,65 +76,18 @@
       ];
     
     CGRect targetFrame = self.tabBarController.navigationItem.rightBarButtonItem.customView.frame;
-    targetFrame.origin.y = targetFrame.origin.y + 46;
+    targetFrame.origin.y = targetFrame.origin.y + 64;
      targetFrame.origin.x = self.view.size.width-100;
     targetFrame.size.width=100;
     [KxMenu showMenuInView:self.view
                   fromRect:targetFrame
                  menuItems:menuItems];
-//    KxMenuItem *first = menuItems[0];
-//    first.foreColor = [UIColor colorWithRed:47/255.0f green:112/255.0f blue:225/255.0f alpha:1.0];
-//    first.alignment = NSTextAlignmentCenter;
+    [KxMenu setTintColor: [UIColor colorWithRed:15/255.0f green:97/255.0f blue:33/255.0f alpha:1.0]];
+
     
-//    [KxMenu showMenuInView:self.view
-//                  fromRect:CGRectMake(self.view.bounds.size.width-100, -46, 100, 100)
-//                 menuItems:menuItems];
+
 }
-//- (void)showMenu:(UIButton *)sender
-//{
-//    NSLog(@"13213");
-//    NSArray *menuItems =
-//    @[
-//      
-//      [KxMenuItem menuItem:@"ACTION MENU Test"
-//                     image:nil
-//                    target:nil
-//                    action:NULL],
-//      
-//      [KxMenuItem menuItem:@"Share this"
-//                     image:nil
-//                    target:self
-//                    action:@selector(pushChat:)],
-//      
-//      [KxMenuItem menuItem:@"Check menu"
-//                     image:nil
-//                    target:self
-//                    action:@selector(pushMenuItem:)],
-//      
-//      [KxMenuItem menuItem:@"Reload page"
-//                     image:nil
-//                    target:self
-//                    action:@selector(pushMenuItem:)],
-//      
-//      [KxMenuItem menuItem:@"Search"
-//                     image:nil
-//                    target:self
-//                    action:@selector(pushMenuItem:)],
-//      
-//      [KxMenuItem menuItem:@"Go home"
-//                     image:nil
-//                    target:self
-//                    action:@selector(pushMenuItem:)],
-//      ];
-//    
-//    KxMenuItem *first = menuItems[0];
-//    first.foreColor = [UIColor colorWithRed:47/255.0f green:112/255.0f blue:225/255.0f alpha:1.0];
-//    first.alignment = NSTextAlignmentCenter;
-//    
-//    [KxMenu showMenuInView:self.view
-//                  fromRect:CGRectMake(self.view.bounds.size.width-100, -46, 100, 100)
-//                 menuItems:menuItems];
-//}
+
 - (void) pushChat:(id)sender
 {
 
