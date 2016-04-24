@@ -196,6 +196,10 @@
             [self setupAnimationWithStartRect:CGRectMake(0, 0, 0, CGRectGetHeight(self.forgotButton.frame)) endRect:CGRectMake(0, 0, CGRectGetWidth(self.forgotButton.frame), CGRectGetHeight(self.forgotButton.frame)) object:self.forgotButton duration:0.5];
            
             
+            
+            
+            
+            
         }];
 
     //快速登录动画
