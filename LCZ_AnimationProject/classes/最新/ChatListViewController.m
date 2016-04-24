@@ -82,7 +82,7 @@
     [KxMenu showMenuInView:self.view
                   fromRect:targetFrame
                  menuItems:menuItems];
-    [KxMenu setTintColor: [UIColor colorWithRed:15/255.0f green:97/255.0f blue:33/255.0f alpha:1.0]];
+    [KxMenu setTintColor: [UIColor clearColor]];
 
     
 

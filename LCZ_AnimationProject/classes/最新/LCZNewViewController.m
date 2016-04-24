@@ -23,14 +23,15 @@
 -(void)getToken
 {
  NSMutableDictionary *params = [NSMutableDictionary dictionary];
-    params[@"userId"]=@"test1";
-    params[@"name"]=@"test1";
-    params[@"portraitUri"]=@"qeqwe";
+    params[@"userId"]=@"111";
+    params[@"name"]=@"xxxx";
+    params[@"portraitUri"]=@"http://img2.imgtn.bdimg.com/it/u=998138008,4043877710&fm=206&gp=0.jpg";
     [HttpTool Post:@"https://api.cn.ronghub.com/user/getToken.json" parameters:params success:^(id responseObject) {
-        NSLog(@"2123");
-        
+        NSLog(@"%@",responseObject[@"token"]);
+        NSUserDefaults *ud=[NSUserDefaults standardUserDefaults];
+        [ud setObject:responseObject[@"token"] forKey:@"Token"];
     } failure:^(NSError *error) {
-        
+        NSLog(@"%@",error);
     }];
 
 
@@ -39,7 +40,9 @@
     [super viewDidLoad];
     self.view.backgroundColor=[UIColor whiteColor];
     [self getToken];
-    [[RCIM sharedRCIM] connectWithToken:@"31MSEr5EuNyvYl5BNZKWWLh6gmgQGoc6P6GEId1RDJ9kQgbTYaM3PJQa5SOyGXp8EXDwMEpW3WjaWrLgBQprlA==" success:^(NSString *userId) {
+    NSUserDefaults *ud=[NSUserDefaults standardUserDefaults];
+   NSString *token= [ud objectForKey:@"Token"];
+    [[RCIM sharedRCIM] connectWithToken:token success:^(NSString *userId) {
         NSLog(@"登陆成功。当前登录的用户ID：%@", userId);
     } error:^(RCConnectErrorCode status) {
         NSLog(@"登陆的错误码为:%d", status);

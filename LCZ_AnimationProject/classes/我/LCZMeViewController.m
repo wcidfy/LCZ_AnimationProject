@@ -33,6 +33,15 @@
         _mapView.delegate = self;
     
         _mapView.showsUserLocation = YES; //YES 为打开定位，NO为关闭定位
+    
+    
+    MAPointAnnotation *pointAnnotation = [[MAPointAnnotation alloc] init];
+    pointAnnotation.coordinate = CLLocationCoordinate2DMake(40.055535, 116.430575);
+    pointAnnotation.title = @"标题";
+    pointAnnotation.subtitle = @"副标题";
+    [_mapView addAnnotation:pointAnnotation];
+    
+    
         [self.view addSubview:_mapView];
      [self.navigationController setNavigationBarHidden:YES animated:YES];
      [self setNav];

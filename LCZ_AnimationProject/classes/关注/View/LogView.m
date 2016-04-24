@@ -40,9 +40,11 @@
         _loginView.layer.cornerRadius=10;
         [_loginAndRegi addSubview:_loginView];
         
+        UILabel *phoneLable=[self getLable];
         _phoneTextFiled=[[UITextField alloc]init];
         _phoneTextFiled.placeholder=@"请输入手机号";
-        _phoneTextFiled.leftView=[[UIView alloc]initWithFrame:CGRectMake(0, 0, 20, 30)];
+        _phoneTextFiled.leftView=phoneLable;
+        _phoneTextFiled.leftViewMode = UITextFieldViewModeAlways;
         _phoneTextFiled.textColor=[UIColor whiteColor];
         [_loginView addSubview:_phoneTextFiled];
         
@@ -50,9 +52,12 @@
         whileLine.backgroundColor=[UIColor whiteColor];
         [_loginView addSubview:whileLine];
         
+        UILabel *passLable=[self getLable];
         _PassTextFiled=[[UITextField alloc]init];
         _PassTextFiled.placeholder=@"请输入密码";
         _PassTextFiled.textColor=[UIColor whiteColor];
+        _PassTextFiled.leftView=passLable;
+        _PassTextFiled.leftViewMode = UITextFieldViewModeAlways;
         [_loginView addSubview:_PassTextFiled];
         
         _loginButton=[self getButton];
@@ -62,6 +67,11 @@
         _loginButton.layer.cornerRadius=10;
         [_loginAndRegi addSubview:_loginButton];
         
+        _forgotButton=[self getButton];
+         [_forgotButton setTitle:@"忘记密码?" forState:UIControlStateNormal];
+        [self addSubview:_forgotButton];
+        
+        
         
         _regiView=[[UIView alloc]init];
         _regiView.backgroundColor=[UIColor grayColor];
@@ -69,18 +79,24 @@
         _regiView.layer.cornerRadius=10;
         [_loginAndRegi addSubview:_regiView];
         
+        UILabel *rePhoneLable=[self getLable];
         _regiPhoneTextFiled=[[UITextField alloc]init];
         _regiPhoneTextFiled.placeholder=@"请输入手机号";
         _regiPhoneTextFiled.textColor=[UIColor whiteColor];
+        _regiPhoneTextFiled.leftView=rePhoneLable;
+        _regiPhoneTextFiled.leftViewMode = UITextFieldViewModeAlways;
         [_regiView addSubview:_regiPhoneTextFiled];
         
         whileLine1=[[UIView alloc]init];
         whileLine1.backgroundColor=[UIColor whiteColor];
         [_regiView addSubview:whileLine1];
         
+        UILabel *settingLable=[self getLable];
         _SettingPassTextFiled=[[UITextField alloc]init];
         _SettingPassTextFiled.placeholder=@"请设置密码";
         _SettingPassTextFiled.textColor=[UIColor whiteColor];
+        _SettingPassTextFiled.leftView=settingLable;
+        _SettingPassTextFiled.leftViewMode = UITextFieldViewModeAlways;
         [_regiView addSubview:_SettingPassTextFiled];
         
         _regiButton=[self getButton];
@@ -93,7 +109,7 @@
         _quickLogin=[[UILabel alloc]init];
         _quickLogin.textColor=[UIColor whiteColor];
         _quickLogin.textAlignment=NSTextAlignmentCenter;
-        _quickLogin.text=@"___快速登录___" ;
+        _quickLogin.text=@"————快速登录————" ;
         [self addSubview:_quickLogin];
         _qqShare=[ShareButton buttonWithType:UIButtonTypeCustom];
         [_qqShare setImage:[UIImage imageNamed:@"login_QQ_icon"] forState:UIControlStateNormal];
@@ -130,16 +146,16 @@
     _loginAndRegi.frame=CGRectMake(0, 0,LCZViewWidth*2, 150);
     _loginView.frame=CGRectMake(20,20, LCZViewWidth-40, 80);
     _phoneTextFiled.frame=CGRectMake(0, 10,_loginView.width , 30);
-    whileLine.frame=CGRectMake(0, 40, _loginView.width, 1);
+    whileLine.frame=CGRectMake(20, 40, _loginView.width-40, 1);
     _PassTextFiled.frame=CGRectMake(0, 41,_loginView.width, 30);
     _loginButton.frame=CGRectMake(20, _loginView.x+80+10, _loginView.width, 40);
-    
+    _forgotButton.frame=CGRectMake(LCZViewWidth-100, LCZViewHeight*0.15+150, 90, 40);
     
     
     
     _regiView.frame=CGRectMake(LCZViewWidth+20,20, LCZViewWidth-40, 80);
     _regiPhoneTextFiled.frame=CGRectMake(0, 10,_regiView.width , 30);
-    whileLine1.frame=CGRectMake(0, 40, _regiView.width, 1);
+    whileLine1.frame=CGRectMake(20, 40, _regiView.width-40, 1);
     _SettingPassTextFiled.frame=CGRectMake(0, 41,_regiView.width, 30);
     _regiButton.frame=CGRectMake(LCZViewWidth+20,110, _regiView.width, 40);
     
@@ -176,6 +192,8 @@
             //注册账号动画
             [self setupAnimationWithStartRect:CGRectMake(0, 0, 0, CGRectGetHeight(self.loginchangeButton.frame)) endRect:CGRectMake(0, 0, CGRectGetWidth(self.loginchangeButton.frame), CGRectGetHeight(self.loginchangeButton.frame)) object:self.loginchangeButton duration:0.5];
            
+            //忘记密码
+            [self setupAnimationWithStartRect:CGRectMake(0, 0, 0, CGRectGetHeight(self.forgotButton.frame)) endRect:CGRectMake(0, 0, CGRectGetWidth(self.forgotButton.frame), CGRectGetHeight(self.forgotButton.frame)) object:self.forgotButton duration:0.5];
            
             
         }];
@@ -194,7 +212,13 @@
     but.titleLabel.textAlignment=NSTextAlignmentCenter;
     return but;
 }
+-(UILabel *)getLable
+{
+    UILabel *kgLable=[[UILabel alloc]initWithFrame:CGRectMake(0, 0, 20, 20)];
+    kgLable.backgroundColor=[UIColor clearColor];
 
+    return kgLable;
+}
 //设置动画
 -(void)setupAnimationWithStartRect:(CGRect)startRect endRect:(CGRect)endRect object:(UIView *)view duration:(NSTimeInterval)duration {
     
