@@ -47,6 +47,7 @@
 		B5CCC57D1CC8767D00633F90 /* LogView.m in Sources */ = {isa = PBXBuildFile; fileRef = B5CCC57C1CC8767D00633F90 /* LogView.m */; };
 		B5CCC5831CC9C2C800633F90 /* ShareButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B5CCC5821CC9C2C800633F90 /* ShareButton.m */; };
 		B5CCC5861CCB22D600633F90 /* ChatListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5CCC5851CCB22D600633F90 /* ChatListViewController.m */; };
+		B5CCC5941CCCE58A00633F90 /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5CCC5931CCCE58A00633F90 /* ChatViewController.m */; };
 		B5F4B5801CB38B0A00BE7183 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5F4B57F1CB38B0A00BE7183 /* AVFoundation.framework */; };
 		B5F4B5871CBA0EFB00BE7183 /* AddtreaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5F4B5861CBA0EFB00BE7183 /* AddtreaViewController.m */; };
 		B5F4B58A1CBA0F1900BE7183 /* AddTreaView.m in Sources */ = {isa = PBXBuildFile; fileRef = B5F4B5891CBA0F1900BE7183 /* AddTreaView.m */; };
@@ -151,8 +152,10 @@
 		B5CCC57C1CC8767D00633F90 /* LogView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogView.m; sourceTree = "<group>"; };
 		B5CCC5811CC9C2C800633F90 /* ShareButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareButton.h; sourceTree = "<group>"; };
 		B5CCC5821CC9C2C800633F90 /* ShareButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareButton.m; sourceTree = "<group>"; };
-		B5CCC5841CCB22D600633F90 /* ChatListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatListViewController.h; sourceTree = "<group>"; };
-		B5CCC5851CCB22D600633F90 /* ChatListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatListViewController.m; sourceTree = "<group>"; };
+		B5CCC5841CCB22D600633F90 /* ChatListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChatListViewController.h; path = ../ChatListViewController.h; sourceTree = "<group>"; };
+		B5CCC5851CCB22D600633F90 /* ChatListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChatListViewController.m; path = ../ChatListViewController.m; sourceTree = "<group>"; };
+		B5CCC5921CCCE58A00633F90 /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
+		B5CCC5931CCCE58A00633F90 /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
 		B5F4B57F1CB38B0A00BE7183 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		B5F4B5851CBA0EFB00BE7183 /* AddtreaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddtreaViewController.h; sourceTree = "<group>"; };
 		B5F4B5861CBA0EFB00BE7183 /* AddtreaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddtreaViewController.m; sourceTree = "<group>"; };
@@ -421,8 +424,8 @@
 			children = (
 				B5A3DDDB1CB27866006FD7D6 /* LCZNewViewController.h */,
 				B5A3DDDC1CB27867006FD7D6 /* LCZNewViewController.m */,
-				B5CCC5841CCB22D600633F90 /* ChatListViewController.h */,
-				B5CCC5851CCB22D600633F90 /* ChatListViewController.m */,
+				B5CCC5911CCCE4F400633F90 /* 会话列表 */,
+				B5CCC5901CCCE4CD00633F90 /* 聊天界面 */,
 			);
 			path = "最新";
 			sourceTree = "<group>";
@@ -472,6 +475,24 @@
 				B5A3DDE91CB29F43006FD7D6 /* UIView+Extension.m */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		B5CCC5901CCCE4CD00633F90 /* 聊天界面 */ = {
+			isa = PBXGroup;
+			children = (
+				B5CCC5921CCCE58A00633F90 /* ChatViewController.h */,
+				B5CCC5931CCCE58A00633F90 /* ChatViewController.m */,
+			);
+			path = "聊天界面";
+			sourceTree = "<group>";
+		};
+		B5CCC5911CCCE4F400633F90 /* 会话列表 */ = {
+			isa = PBXGroup;
+			children = (
+				B5CCC5841CCB22D600633F90 /* ChatListViewController.h */,
+				B5CCC5851CCB22D600633F90 /* ChatListViewController.m */,
+			);
+			path = "会话列表";
 			sourceTree = "<group>";
 		};
 		C84E866E79BF5E8F03B699D1 /* Pods */ = {
@@ -697,6 +718,7 @@
 				B5A3DDE61CB28539006FD7D6 /* LCZTabBar.m in Sources */,
 				B5A3DD9D1CB2724E006FD7D6 /* ViewController.m in Sources */,
 				B52747AF1CC3551A007F423B /* KRVideoPlayerControlView.m in Sources */,
+				B5CCC5941CCCE58A00633F90 /* ChatViewController.m in Sources */,
 				B52747A71CC32304007F423B /* BottonCell.m in Sources */,
 				B57BEC5C1CBE384E0043358F /* XFCommentModel.m in Sources */,
 				B5A3DDDD1CB27867006FD7D6 /* LCZNewViewController.m in Sources */,

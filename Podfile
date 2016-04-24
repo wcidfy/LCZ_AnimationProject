@@ -2,7 +2,7 @@ platform :ios,'7.0'
 use_frameworks!
 
 target 'LCZ_AnimationProject' do
- pod 'SDWebImage'
+pod 'SDWebImage'
 pod 'AFNetworking','3.0.0'
 pod 'MJExtension', '~> 3.0.7'
 pod 'ReactiveCocoa'
@@ -11,5 +11,6 @@ pod 'AMap2DMap'
 pod 'AMapSearch'
 pod 'RongCloudIMKit', '2.4.0'
 pod 'KxMenu'
+pod 'UMengSocial', '~> 5.0'
 end
 

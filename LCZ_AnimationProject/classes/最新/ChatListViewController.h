@@ -7,7 +7,9 @@
 //
 
 #import <RongIMKit/RongIMKit.h>
-
+/**
+ *  会话列表
+ */
 @interface ChatListViewController : RCConversationListViewController
 
 @end

@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "LCZTabBarController.h"
+#import "UMSocial.h"
 @interface AppDelegate ()
 
 @end
@@ -24,6 +25,7 @@
     [self.window makeKeyAndVisible];
     
    
+      [UMSocialData setAppKey:@"571c725e67e58e56fe000eed"];
     
 
     return YES;
@@ -50,5 +52,18 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+//用于应用跳转的新旧方法
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url
+{
+    return  [UMSocialSnsService handleOpenURL:url];
+}
 
+- (BOOL)application:(UIApplication *)application
+            openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication
+         annotation:(id)annotation
+{
+    NSLog(@"%@", url);
+    return  [UMSocialSnsService handleOpenURL:url];
+}
 @end

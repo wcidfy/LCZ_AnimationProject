@@ -8,6 +8,7 @@
 
 #import "ChatListViewController.h"
 #import "KxMenu.h"
+#import "ChatViewController.h"
 @interface ChatListViewController ()
 
 @end
@@ -36,14 +37,14 @@
 - (void)onSelectedTableRow:(RCConversationModelType)conversationModelType
          conversationModel:(RCConversationModel *)model
                atIndexPath:(NSIndexPath *)indexPath {
-    RCConversationViewController *conversationVC = [[RCConversationViewController alloc]init];
-    conversationVC.conversationType = model.conversationType;
+    ChatViewController *conversationVC = [[ChatViewController alloc]init];
+//    私聊
+    conversationVC.conversationType =1;
     conversationVC.targetId = model.targetId;
         conversationVC.title=model.targetId;
     self.hidesBottomBarWhenPushed=YES;
     
     [self.navigationController pushViewController:conversationVC animated:YES];
-//    [self presentViewController:conversationVC animated:YES completion:nil];
 }
 -(void)showMenu:(UIButton *)sender {
     NSArray *menuItems =

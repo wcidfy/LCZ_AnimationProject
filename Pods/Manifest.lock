@@ -30,6 +30,7 @@ PODS:
   - SDWebImage (3.7.5):
     - SDWebImage/Core (= 3.7.5)
   - SDWebImage/Core (3.7.5)
+  - UMengSocial (5.0)
 
 DEPENDENCIES:
   - AFNetworking (= 3.0.0)
@@ -41,6 +42,7 @@ DEPENDENCIES:
   - ReactiveCocoa
   - RongCloudIMKit (= 2.4.0)
   - SDWebImage
+  - UMengSocial (~> 5.0)
 
 SPEC CHECKSUMS:
   AFNetworking: 932ff751f9d6fb1dad0b3af58b7e3ffba0a4e7fd
@@ -52,7 +54,8 @@ SPEC CHECKSUMS:
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   RongCloudIMKit: c2cb0013452b98b38267d395b6155665344db96e
   SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
+  UMengSocial: 48b67179c492a8cf7803fbb0438b8f55432e2fc1
 
-PODFILE CHECKSUM: 87d4dc618062e7d8be16e88f66fb4c9fae6ba098
+PODFILE CHECKSUM: 6c45ace4602d7dac61b1cd113a7c875e7c9ecb2e
 
 COCOAPODS: 1.0.0.beta.4
