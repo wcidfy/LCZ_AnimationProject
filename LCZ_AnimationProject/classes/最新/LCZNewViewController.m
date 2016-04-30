@@ -10,7 +10,9 @@
 #import <RongIMKit/RongIMKit.h>
 #import "HttpTool.h"
 #import "ChatListViewController.h"
-@interface LCZNewViewController ()
+
+
+@interface LCZNewViewController ()<RCIMUserInfoDataSource>
 
 @end
 
@@ -30,6 +32,7 @@
         NSLog(@"%@",responseObject[@"token"]);
         NSUserDefaults *ud=[NSUserDefaults standardUserDefaults];
         [ud setObject:responseObject[@"token"] forKey:@"Token"];
+      
     } failure:^(NSError *error) {
         NSLog(@"%@",error);
     }];
@@ -44,6 +47,9 @@
    NSString *token= [ud objectForKey:@"Token"];
     [[RCIM sharedRCIM] connectWithToken:token success:^(NSString *userId) {
         NSLog(@"登陆成功。当前登录的用户ID：%@", userId);
+      
+        
+        [[RCIM sharedRCIM]setUserInfoDataSource:self];
     } error:^(RCConnectErrorCode status) {
         NSLog(@"登陆的错误码为:%d", status);
     } tokenIncorrect:^{
@@ -69,19 +75,15 @@
     self.hidesBottomBarWhenPushed=NO;
 
 }
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)getUserInfoWithUserId:(NSString *)userId completion:(void (^)(RCUserInfo *))completion
+{
+    if ([@"1213" isEqual:userId]) {
+        RCUserInfo *user = [[RCUserInfo alloc]init];
+        user.userId = @"1213";
+        user.name = @"韩梅梅";
+        user.portraitUri = @"http://rongcloud-web.qiniudn.com/docs_demo_rongcloud_logo.png";
+        return completion(user);
+    }
+    return completion(nil);
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
 @end

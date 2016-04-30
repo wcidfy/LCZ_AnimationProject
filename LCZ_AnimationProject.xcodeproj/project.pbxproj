@@ -83,6 +83,7 @@
 		B52747AB1CC35292007F423B /* KRVideoPlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KRVideoPlayerController.m; sourceTree = "<group>"; };
 		B52747AD1CC3551A007F423B /* KRVideoPlayerControlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KRVideoPlayerControlView.h; sourceTree = "<group>"; };
 		B52747AE1CC3551A007F423B /* KRVideoPlayerControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KRVideoPlayerControlView.m; sourceTree = "<group>"; };
+		B52B593C1CD30D2E0022EF49 /* RCUseInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCUseInfo.h; sourceTree = "<group>"; };
 		B57BEC351CBC86420043358F /* MyAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAlertView.h; sourceTree = "<group>"; };
 		B57BEC361CBC86420043358F /* MyAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAlertView.m; sourceTree = "<group>"; };
 		B57BEC381CBC8A9C0043358F /* contimage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = contimage.png; sourceTree = "<group>"; };
@@ -426,6 +427,7 @@
 				B5A3DDDC1CB27867006FD7D6 /* LCZNewViewController.m */,
 				B5CCC5911CCCE4F400633F90 /* 会话列表 */,
 				B5CCC5901CCCE4CD00633F90 /* 聊天界面 */,
+				B52B593C1CD30D2E0022EF49 /* RCUseInfo.h */,
 			);
 			path = "最新";
 			sourceTree = "<group>";
@@ -806,7 +808,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -843,7 +845,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -871,7 +873,7 @@
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "lxx.adqer.com.LCZ-AnimationProject";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos9.2;
+				SDKROOT = iphoneos;
 				TVOS_DEPLOYMENT_TARGET = 9.1;
 				VALID_ARCHS = "armv7 armv7s";
 			};
@@ -898,7 +900,7 @@
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "lxx.adqer.com.LCZ-AnimationProject";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos9.2;
+				SDKROOT = iphoneos;
 				TVOS_DEPLOYMENT_TARGET = 9.1;
 				VALID_ARCHS = "armv7 armv7s";
 			};

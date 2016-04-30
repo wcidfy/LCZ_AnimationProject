@@ -113,10 +113,7 @@
     if (_scrollView==nil) {
         _scrollView=[[UIScrollView alloc]init];
         _scrollView.frame=self.view.bounds;
-//        _scrollView.y=0;
-//        _scrollView.x=0;
-//        _scrollView.width=self.view.bounds.size.width;
-//        _scrollView.height=self.view.bounds.size.height;
+
         _scrollView.delegate=self;
         _scrollView.pagingEnabled=YES;
         _scrollView.contentSize=CGSizeMake(_scrollView.width*self.childViewControllers.count, 0);
@@ -128,7 +125,7 @@
 - (UIView *)titleView{
     if (_titleView == nil) {
         _titleView = [[UIView alloc]init];
-        _titleView.frame = CGRectMake(0, 64, self.view.width, 35);
+        _titleView.frame = CGRectMake(0, 0, self.view.width, 35);
         _titleView.backgroundColor = [[UIColor whiteColor]colorWithAlphaComponent:0.7];
     }
     return _titleView;

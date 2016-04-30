@@ -18,7 +18,8 @@
 {
     self=[super initWithFrame:frame];
     if (self) {
-        
+       
+
         UITabBarItem *barItem=[UITabBarItem appearance];
         [barItem setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor blackColor]} forState:UIControlStateSelected];
         [barItem setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor grayColor]} forState:UIControlStateNormal];
@@ -54,6 +55,8 @@
             viewX=(index>1?index+1:index)*self.width/5;
             view.frame=CGRectMake(viewX, 0, Width/5, Height);
             index++;
+           
+           
         }
     }
 

@@ -30,7 +30,8 @@
     [self setCollectionConversationType:@[@(ConversationType_DISCUSSION),
                                           @(ConversationType_GROUP)]];
     self.navigationItem.rightBarButtonItem=[[UIBarButtonItem alloc]initWithTitle:@"+" style:UIBarButtonItemStyleDone target:self action:@selector(showMenu:)];
-    
+    [self setConversationAvatarStyle:1];
+   
 }
 
 //重写RCConversationListViewController的onSelectedTableRow事件
@@ -40,8 +41,10 @@
     ChatViewController *conversationVC = [[ChatViewController alloc]init];
 //    私聊
     conversationVC.conversationType =1;
-    conversationVC.targetId = model.targetId;
-        conversationVC.title=model.targetId;
+    conversationVC.targetId = model.senderUserId;
+     RCUserInfo *aUserInfo = [[RCUserInfo alloc]initWithUserId:@"111" name:@"xxxx" portrait:@"http://img2.imgtn.bdimg.com/it/u=998138008,4043877710&fm=206&gp=0.jpg"];;
+        conversationVC.title=aUserInfo.name;
+    
     self.hidesBottomBarWhenPushed=YES;
     
     [self.navigationController pushViewController:conversationVC animated:YES];
@@ -53,27 +56,27 @@
       [KxMenuItem menuItem:@"发起聊天"
                      image:[UIImage imageNamed:@"chat_icon"]
                     target:self
-                    action:@selector(pushChat:)],
+                    action:@selector(pushChat)],
       
       [KxMenuItem menuItem:@"添加好友"
                      image:[UIImage imageNamed:@"addfriend_icon"]
                     target:self
-                    action:@selector(pushAddFriend:)],
+                    action:@selector(pushAddFriend)],
       
       [KxMenuItem menuItem:@"通讯录"
                      image:[UIImage imageNamed:@"contact_icon"]
                     target:self
-                    action:@selector(pushAddressBook:)],
+                    action:@selector(pushAddressBook)],
       
       [KxMenuItem menuItem:@"公众账号"
                      image:[UIImage imageNamed:@"public_account"]
                     target:self
-                    action:@selector(pushPublicService:)],
+                    action:@selector(pushPublicService)],
       
       [KxMenuItem menuItem:@"添加公众号"
                      image:[UIImage imageNamed:@"add_public_account"]
                     target:self
-                    action:@selector(pushAddPublicService:)],
+                    action:@selector(pushAddPublicService)],
       ];
     
     CGRect targetFrame = self.tabBarController.navigationItem.rightBarButtonItem.customView.frame;
@@ -88,11 +91,31 @@
     
 
 }
-
-- (void) pushChat:(id)sender
+#pragma mark 发起聊天
+- (void) pushChat
 {
 
-    NSLog(@"23432'");
+    NSLog(@"发起聊天");
 
+}
+#pragma mark 添加好友
+-(void)pushAddFriend
+{
+     NSLog(@"添加好友");
+}
+#pragma mark 通讯录
+-(void)pushAddressBook
+{
+     NSLog(@"通讯录");
+}
+#pragma mark 公众账号
+-(void)pushPublicService
+{
+     NSLog(@"公众账号");
+}
+#pragma mark 添加公众账号
+-(void)pushAddPublicService
+{
+     NSLog(@"添加公众账号");
 }
 @end

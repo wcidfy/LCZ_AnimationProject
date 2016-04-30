@@ -22,7 +22,7 @@
     [super viewDidLoad];
     //    self.view.backgroundColor=[UIColor whiteColor];
     _tableview=[[UITableView alloc]init];
-    _tableview.frame=CGRectMake(0, 99, self.view.bounds.size.width, self.view.bounds.size.height-50-99);
+    _tableview.frame=CGRectMake(0, 35, self.view.bounds.size.width, self.view.bounds.size.height-50-99);
     _tableview.delegate=self;
     _tableview.dataSource=self;
     //    [_tableview setHeight:40];

@@ -9,6 +9,8 @@
 #import "AppDelegate.h"
 #import "LCZTabBarController.h"
 #import "UMSocial.h"
+#import "UMSocialSinaSSOHandler.h"
+
 @interface AppDelegate ()
 
 @end
@@ -26,8 +28,8 @@
     
    
       [UMSocialData setAppKey:@"571c725e67e58e56fe000eed"];
-    
-
+      [UMSocialData openLog:YES];
+   
     return YES;
 }
 

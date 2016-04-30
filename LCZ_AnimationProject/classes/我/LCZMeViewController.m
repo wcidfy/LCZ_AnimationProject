@@ -37,12 +37,12 @@
     
     MAPointAnnotation *pointAnnotation = [[MAPointAnnotation alloc] init];
     pointAnnotation.coordinate = CLLocationCoordinate2DMake(40.055535, 116.430575);
-    pointAnnotation.title = @"标题";
+    pointAnnotation.title = @"呵呵";
     pointAnnotation.subtitle = @"副标题";
     [_mapView addAnnotation:pointAnnotation];
     
     
-        [self.view addSubview:_mapView];
+     [self.view addSubview:_mapView];
      [self.navigationController setNavigationBarHidden:YES animated:YES];
      [self setNav];
     
